@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="robots" content="noindex">
+    <title>BanditBB</title>
+    <link href="public/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="themes/banditbb-default/css/common.css" rel="stylesheet" type="text/css">
+    <link href="themes/banditbb-default/css/hyperlinks.css" rel="stylesheet" type="text/css">
+    <link href="themes/banditbb-default/css/forms.css" rel="stylesheet" type="text/css">
+    <script src="public/js/3rdparty/jquery-3.6.1.min.js"></script>
+    <script src="public/js/3rdparty/jquery-ui.js"></script>
+    <script src="public/js/common.js"></script>
+    <script src="public/js/hovercards.js"></script>
+
+    <script type="application/json" id="json">
+        {
+            "baseUrl":"{{baseUrl}}",
+            "wrapper":"{{wrapper}}",
+            "eyeSlash":"fa-solid fa-eye-slash",
+            "eyeSlashNone":"fa-solid fa-eye"
+        }
+    </script>
+</head>
+<body>
+<header>
+<div class="floater">
+    <div class="upperBar">
+        <div class="table">
+            <div class="tableRow">
+                <div class="genericLeftCell upperBarLeftLinks"><i class="fa-solid fa-house-chimney"></i> <a href="url">Home</a> / <a href="url">Forums</a></div>
+                <div class="genericRightCell upperBarRightLinks"><a href="javascript:void(0);">English (US-American) <i class="fa-solid fa-caret-down"></i></a><a href="javascript:void(0);">BanditBB Default <i class="fa-solid fa-caret-down"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="middleBar">
+        <div class="table">
+            <div class="tableRow">
+                <div class="genericLeftCell"><img src="public/imagesets/default/images/logo.png"></div>
+                <div class="genericRightCell"><span class="signInButton"><a href="url"><i class="fa-solid fa-key"></i> Sign In</a></span><span class="createAccountButton"><a href="url"><i class="fa-solid fa-user-plus"></i> Create Account</a></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="menuBar">
+        <div class="table">
+            <div class="tableRow">
+                <div class="genericLeftCell menuBarLeft"><span class="menuBarLeftActive"><a href="url"><i class="fa-regular fa-comment"></i> Forums</a></span><a href="url"><i class="fa-solid fa-users"></i> Members</a><a href="url"><i class="fa-regular fa-calendar"></i> Calendar</a><a href="url"><i class="fa-solid fa-magnifying-glass"></i> Search</a><a href="url"><i class="fa-regular fa-circle-question"></i> Help</a></div>
+                <div class="genericRightCell menuBarRight"><a href="javascript:void(0);">Expanded Menu <i class="fa-solid fa-caret-down"></i></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<div class="floater">
+    <div class="contentBox">Here</div>
+</div>
+<footer>
+    <div class="floater">
+        <div class="footerBar">
+            <div class="table">
+                <div class="tableRow">
+                    <div class="footerBarLeft"><a href="url">Privacy</a><a href="url">Contact</a></div>
+                    <div class="footerBarCenter">All times are <strong>America/Boise</strong> (UTC -07:00)</div>
+                    <div class="footerBarRight">Powered by <strong><a href="https://www.banditbb.com" target="_blank">BanditBB&reg;</a></strong> v0.1.0. &copy;2023 BanditBB.</div>
+                </div>
+            </div>
+        </div>
+        <div class="footerDebugInfo"><strong>Interesting Debug Information:</strong><br><span><i class="fa-regular fa-clock"></i> Page generated in <strong>0.01</strong> seconds (<strong>76%</strong> PHP, <strong>21%</strong> SQL)</span><span><i class="fa-solid fa-database"></i> <strong>12</strong> SQL queries</span><span><i class="fa-regular fa-file-zipper"></i> GZIP <strong>enabled</strong></span></div>
+    </div>
+</footer>
+</body>
+</html>

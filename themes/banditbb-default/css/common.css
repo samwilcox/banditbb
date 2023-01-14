@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html { height: 100%; }
+body { font-family: 'Kanit', sans-serif; font-size: 16px; color: #000; background-color: #1B1D21; padding: 0px; margin: 0px; font-weight: 300; height: 100%; }
+header { width: auto; }
+.floater { max-width: 1160px; width: 1160px; margin-left: auto; margin-right: auto; }
+.upperBar { width: auto; color: #FFF; background-color: #000; border-left: 1px solid #404040; border-right: 1px solid #404040; border-bottom: 1px solid #404040; padding-left: 12px; padding-right: 12px; padding-top: 4px; padding-bottom: 4px; font-size: 13px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.table { display: table; width: 100%; box-sizing: border-box; border-collapse: separate; border-spacing: 0px; padding: 0px; margin: 0px; }
+.tableRow { display: table-row; }
+.genericLeftCell { display: table-cell; vertical-align: middle; }
+.genericRightCell { display: table-cell; vertical-align: middle; text-align: right; }
+.middleBar { width: auto; margin-top: 30px; }
+.menuBar { width: auto; margin-top: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; background-color: #4653BB; color: #FFF; padding: 0px; border-top: 1px solid #4653BB; }
+.contentBox { width: auto; background-color: #FFF; padding: 18px; }
+footer { width: auto; }
+.footerBar { width: auto; background-color: #4653BB; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; font-size: 13px; color: #FFF; }
+.footerBarLeft { display: table-cell; vertical-align: middle; width: 33%; }
+.footerBarCenter { display: table-cell; vertical-align: middle; width: 34%; text-align: center; }
+.footerBarRight { display: table-cell; vertical-align: middle; width: 33%; text-align: right; }
+.footerDebugInfo { width: auto; margin-top: 20px; text-align: center; color: #808080; font-size: 12px; }
+.footerDebugInfo span { display: inline-block; margin-left: 20px; }
+.footerDebugInfo span:first-of-type { margin-left: 0px; }

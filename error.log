@@ -1,0 +1,1 @@
+[Thu Jan 12 16:06:28.493454 2023] [autoindex:error] [pid 146395] [client 127.0.0.1:59342] AH01276: Cannot serve directory /home/sam/Documents/git/banditbb/: No matching DirectoryIndex (index.html,index.cgi,index.pl,index.php,index.xhtml,index.htm,index.html,index.php) found, and server-generated directory index forbidden by Options directive
