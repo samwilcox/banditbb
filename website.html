@@ -25,21 +25,89 @@
     </script>
 </head>
 <body>
+<div class="backgroundDisabler" id="background-disabler" onclick="closeDialog();"></div>
+<div class="hovercard" id="hovercard">
+    <div class="hovercardBackgroundPhoto" id="hovercard-bg-1" style="--background: url('http://bbb.com/uploads/attachments/defleppard.jpg');">
+        <span class="relative" id="hovercard-rel-1"><span class="photoHovercard hovercardPhotoFloater" id="hovercard-photo-1" style="background: url('http://bbb.com/uploads/photos/1/sam.jpg'); background-size: cover; background-position: center;"></span></span>
+    </div>
+    <div class="hovercardContent" id="hovercard-content-1">
+        <span class="hovercardTitle" id="hovercard-title-1"><a href="url" id="hovercard-memberlink-1">Sam Wilcox</a></span> <span class="onlineStatusDot tooltip tooltip--right" id="hovercard-status-1" data-tooltip="Online now"></span><br>
+        <span class="hovercardGroupTitle" id="hovercard-grouptitle-1"><a href="url" id="hovercard-grouplink-1" style="color: red;">Administrators</a></span>
+    </div>
+    <div class="hovercardSubContent" id="hovercard-subcontent-1">
+        <div class="table" id="hovercard-subcontenttable-1">
+            <div class="tableRow" id="hovercard-subcontenttr-1">
+                <div class="genericLeftCell" id="hovercard-subcontentleftcell-1"><span class="hovercardMemberSince" id="hovercard-since-1">Member since Date and Time</span></div>
+                <div class="genericRightCell" id="hovercard-subcontentrightcell-1"><span class="hovercardMemberSince" id="hovercard-lastonline-1">Last online Date and Time</span></div>
+            </div>
+        </div><br>
+        <div class="tableNoWidth" id="hovercard-subcontentable2-1">
+            <div class="tableRow" id="hovercard-subcontenttr2-1">
+                <div class="hovercardCell" id="hovercard-subcontentcell1-1"><div class="hovercardBubble" id="hovercard-subcontentbubble1-1"><span class="hovercardStatTitle" id="hovercard-subcontent-stat1-1">Posts</span><br>21.k</div></div>
+                <div class="hovercardCell" id="hovercard-subcontentcell2-1"><div class="hovercardBubble" id="hovercard-subcontentbubble2-1"><span class="hovercardStatTitle" id="hovercard-subcontent-stat2-1">Reputation</span><br>21.k</div></div>
+                <div class="hovercardCell" id="hovercard-subcontentcell3-1"><div class="hovercardBubble" id="hovercard-subcontentbubble3-1"><span class="hovercardStatTitle" id="hovercard-subcontent-stat3-1">Gender</span><br>Man <i class="fa-solid fa-mars" id="hovercard-gendericon-1"></i></div></div>
+                <div class="hovercardCell" id="hovercard-subcontentcell4-1"><div class="hovercardBubble" id="hovercard-subcontentbubble4-1"><span class="hovercardStatTitle" id="hovercard-subcontent-stat4-1">Location</span><br><a href="https://www.google.com/maps?q=Boise, Idaho" id="hovercard-subcontent-location-1" target="_blank">Boise, Idaho</a></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="hovercardFooter" id="hovercard-footer-1">Footer</div>
+</div>
+<div class="dropDownMenu" id="dropdownmenu-localization">
+    <span class="dropDownMenuLinks">
+        <a href="url">English (US-American)</a>
+    </span>
+</div>
+<div class="dropDownMenu" id="dropdownmenu-theme">
+    <span class="dropDownMenuLinks">
+        <a href="url">BanditBB Default</a>
+    </span>
+</div>
+<div class="dropDownMenu" id="dropdownmenu-expandedmenu">
+    <span class="dropDownMenuLinks">
+        <a href="url"><i class="fa-solid fa-newspaper"></i> Latest Content</a>
+        <a href="url"><i class="fa-solid fa-user-tie"></i> Community Leaders</a>
+        <a href="url"><i class="fa-solid fa-earth-americas"></i> Who's Online?</a>
+        <a href="url"><i class="fa-regular fa-square-check"></i> Mark All Read</a>
+        <a href="url"><i class="fa-solid fa-cookie-bite"></i> Delete Cookies</a>
+    </span>
+</div>
+<div class="dialog" id="dialog-signinbox">
+    <form name="signinboxform" action="" method="post" enctype="multipart/form-data">
+    <div class="dialogHeader">
+        <div class="table">
+            <div class="tableRow">
+                <div class="genericLeftCell">Sign In</div>
+                <div class="genericRightCell"><a href="javascript:void(0);" class="tooltip tooltip--right" data-tooltip="Close dialog" onclick="closeDialog(this);"><i class="fa-solid fa-xmark"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="dialogContent">
+        <span class="fieldIconFloater"><input type="text" name="identity" placeholder="Email Address or Username" class="identityField"><i class="fa-solid fa-user identityIcon"></i></span>
+        <span class="fieldIconFloater"><input type="password" name="password" id="password-field-box" placeholder="Password" class="passwordField"><i class="fa-solid fa-key passwordIcon"></i><span class="passwordToggleIcon"><a href="javascript:void(0);" data-field="password-field-box" data-icon="password-icon-box" onclick="togglePasswordField(this);"><i class="fa-solid fa-eye-slash" id="password-icon-box"></i></a></span></span><br>
+        <label class="checkboxLabel">Remember Me?<br><span class="checkboxDesc">Sign me in automatically on my next visit. This is not recommended for public/shared devices</span><input type="checkbox" name="rememberme" value="1"><span class="checkmark"></span></label><br>
+        <div class="signInOptionsFlex">
+            <div class="signInOptionsLeft simpleButton"><a href="url"><i class="fa-solid fa-trowel-bricks"></i> Forgot Password?</a></div>
+            <div class="signInOptionsRight simpleButton"><a href="url"><i class="fa-solid fa-user-plus"></i> Create Account</a></div>
+        </div>
+    </div>
+    <div class="dialogFooter"><input type="submit" name="signinboxformsubmit" value="Sign In" class="longField"></div>
+    </form>
+</div>
 <header>
 <div class="floater">
     <div class="upperBar">
         <div class="table">
             <div class="tableRow">
                 <div class="genericLeftCell upperBarLeftLinks"><i class="fa-solid fa-house-chimney"></i> <a href="url">Home</a> / <a href="url">Forums</a></div>
-                <div class="genericRightCell upperBarRightLinks"><a href="javascript:void(0);">English (US-American) <i class="fa-solid fa-caret-down"></i></a><a href="javascript:void(0);">BanditBB Default <i class="fa-solid fa-caret-down"></i></a></div>
+                <div class="genericRightCell upperBarRightLinks"><a href="javascript:void(0);" id="dropdownmenu-localization-link" data-menu="dropdownmenu-localization" data-link="dropdownmenu-localization-link" data-ignored="dropdownmenu-localization-icon" onclick="openDropDownMenu(this);">English (US-American) <i class="fa-solid fa-caret-down" id="dropdownmenu-localization-icon"></i></a><a href="javascript:void(0);" id="dropdownmenu-theme-link" data-menu="dropdownmenu-theme" data-link="dropdownmenu-theme-link" data-ignored="dropdownmenu-theme-icon" onclick="openDropDownMenu(this);">BanditBB Default <i class="fa-solid fa-caret-down" id="dropdownmenu-theme-icon"></i></a></div>
             </div>
         </div>
     </div>
     <div class="middleBar">
         <div class="table">
             <div class="tableRow">
-                <div class="genericLeftCell"><img src="public/imagesets/default/images/logo.png"></div>
-                <div class="genericRightCell"><span class="signInButton"><a href="url"><i class="fa-solid fa-key"></i> Sign In</a></span><span class="createAccountButton"><a href="url"><i class="fa-solid fa-user-plus"></i> Create Account</a></span></div>
+                <div class="genericLeftCell"><a href="url" class="tooltip tooltip--left" data-tooltip="BanditBB"><img src="public/imagesets/default/images/logo.png" class="logoHover"></a></div>
+                <div class="genericRightCell"><span class="signInButton"><a href="url" data-dialog="dialog-signinbox" data-width="700" onclick="openDialog(this); return false;"><i class="fa-solid fa-key"></i> Sign In</a></span><span class="createAccountButton"><a href="url"><i class="fa-solid fa-user-plus"></i> Create Account</a></span></div>
             </div>
         </div>
     </div>
@@ -47,14 +115,119 @@
         <div class="table">
             <div class="tableRow">
                 <div class="genericLeftCell menuBarLeft"><span class="menuBarLeftActive"><a href="url"><i class="fa-regular fa-comment"></i> Forums</a></span><a href="url"><i class="fa-solid fa-users"></i> Members</a><a href="url"><i class="fa-regular fa-calendar"></i> Calendar</a><a href="url"><i class="fa-solid fa-magnifying-glass"></i> Search</a><a href="url"><i class="fa-regular fa-circle-question"></i> Help</a></div>
-                <div class="genericRightCell menuBarRight"><a href="javascript:void(0);">Expanded Menu <i class="fa-solid fa-caret-down"></i></a></div>
+                <div class="genericRightCell menuBarRight"><a href="javascript:void(0);" id="dropdownmenu-expandedmenu-link" data-menu="dropdownmenu-expandedmenu" data-link="dropdownmenu-expandedmenu-link" data-ignored="dropdownmenu-expandedmenu-icon" onclick="openDropDownMenu(this);">Expanded Menu <i class="fa-solid fa-caret-down" id="dropdownmenu-expandedmenu-icon"></i></a></div>
             </div>
         </div>
     </div>
 </div>
 </header>
 <div class="floater">
-    <div class="contentBox">Here</div>
+    <div class="contentBox">
+        <div class="table">
+            <div class="tableRow">
+                <div class="contentLeft">
+                    <div class="categoryBox">
+                        <div class="categoryHeader" id="category-1-header">
+                            <div class="table">
+                                <div class="tableRow">
+                                    <div class="genericLeftCell categoryHeaderLeft"><a href="url">Category Name Here</a></div>
+                                    <div class="genericRightCell categoryHeaderRight"><a href="javascript:void(0);" class="tooltip tooltip--top" data-tooltip="Toggle" data-header="category-1-header" data-content="category-1-content" data-icon="category-1-icon" data-collapse="fa-solid fa-circle-minus" data-expand="fa-solid fa-circle-plus" onclick="toggle(this);"><i class="fa-solid fa-circle-minus" id="category-1-icon"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="category-1-content">
+                            <div class="categoryItem">
+                                <div class="table">
+                                    <div class="tableRow">
+                                        <div class="categoryItemIcon"><span class="categoryStatusIcon tooltip tooltip--left" data-tooltip="This forum contains unread content"><i class="fa-regular fa-comment"></i></span></div>
+                                        <div class="categoryItemInfo">
+                                            <span class="forumLink"><a href="url" class="tooltip tooltip--top" data-tooltip="3 people are viewing this forum">Forum Name Here</a></span><br>
+                                            <span class="forumDescription">The description for this forum will go right.</span><br>
+                                            <span class="subForumsLink"><a href="javascript:void(0);">Sub Forums <i class="fa-solid fa-angle-down"></i></a></span>
+                                        </div>
+                                        <div class="categoryItemStats">
+                                            <div class="table">
+                                                <div class="tableRow">
+                                                    <div class="forumStatsItem"><span class="forumStatsTitle">Topics</span><br>21.1K</div>
+                                                    <div class="forumStatsItem"><span class="forumStatsTitle">Replies</span><br>12.5K</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="categoryItemLastPost">
+                                            <div class="flex">
+                                                <div class="sideBySideLeft"><span class="photoThumbnail" style="background: url('http://bbb.com/uploads/photos/1/sam.jpg'); background-size: cover; background-position: center;"></span></div>
+                                                <div class="sideBySideRight">
+                                                    <a href="url" class="tooltip tooltip--top" data-tooltip="4 people are viewing this topic">Topic Name Here</a><br>
+                                                    <span class="smallText"><a href="url" id="hc-link" data-memberid="1" data-link="hc-link" data-ignored="hovercard-bg-1,hovercard-rel-1,hovercard-photo-1,hovercard-content-1,hovercard-title-1,hovercard-memberlink-1,hovercard-status-1,hovercard-grouptitle-1,hovercard-grouplink-1,hovercard-subcontent-1,hovercard-subcontenttable-1,hovercard-subcontenttr-1,hovercard-subcontentleftcell-1,hovercard-subcontentrightcell-1,hovercard-since-1,hovercard-lastonline-1,hovercard-subcontentable2-1,hovercard-subcontenttr2-1,hovercard-subcontentcell1-1,hovercard-subcontentcell2-1,hovercard-subcontentcell3-1,hovercard-subcontentcell4-1,hovercard-subcontentbubble1-1,hovercard-subcontentbubble2-1,hovercard-subcontentbubble3-1,hovercard-subcontentbubble4-1,hovercard-subcontent-stat1-1,hovercard-subcontent-stat2-1,hovercard-subcontent-stat3-1,hovercard-subcontent-stat4-1,hovercard-subcontent-location-1,hovercard-footer-1,hovercard-gendericon-1" onmouseover="openHovercard(this);">Sam Wilcox</a>, <span class="timestampText">Date and Time</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categoryItem">
+                                <div class="table">
+                                    <div class="tableRow">
+                                        <div class="categoryItemIcon"><span class="categoryStatusIcon tooltip tooltip--left" data-tooltip="This forum contains unread content (Question & Answer forum)"><i class="fa-regular fa-circle-question"></i></span></div>
+                                        <div class="categoryItemInfo">
+                                            <span class="forumLink"><a href="url" class="tooltip tooltip--top" data-tooltip="3 people are viewing this forum">Forum Name Here</a></span><br>
+                                            <span class="forumDescription">The description for this forum will go right.</span><br>
+                                            <span class="subForumsLink"><a href="javascript:void(0);">Sub Forums <i class="fa-solid fa-angle-down"></i></a></span>
+                                        </div>
+                                        <div class="categoryItemStats">
+                                            <div class="table">
+                                                <div class="tableRow">
+                                                    <div class="forumStatsItem"><span class="forumStatsTitle">Topics</span><br>21.1K</div>
+                                                    <div class="forumStatsItem"><span class="forumStatsTitle">Replies</span><br>12.5K</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="categoryItemLastPost">
+                                            <div class="flex">
+                                                <div class="sideBySideLeft"><span class="photoThumbnail" style="background: url('http://bbb.com/uploads/photos/1/sam.jpg'); background-size: cover; background-position: center;"></span></div>
+                                                <div class="sideBySideRight">
+                                                    <a href="url" class="tooltip tooltip--top" data-tooltip="4 people are viewing this topic">Topic Name Here</a><br>
+                                                    <span class="smallText"><a href="url">Sam Wilcox</a>, <span class="timestampText">Date and Time</span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categoryItem">
+                                <div class="table">
+                                    <div class="tableRow">
+                                        <div class="categoryItemIcon"><span class="categoryStatusIcon tooltip tooltip--left" data-tooltip="This forum will redirect you"><i class="fa-regular fa-compass"></i></span></div>
+                                        <div class="categoryItemInfo">
+                                            <span class="forumLink"><a href="url" class="tooltip tooltip--top" data-tooltip="3 people are viewing this forum">Forum Name Here</a></span><br>
+                                            <span class="forumDescription">The description for this forum will go right.</span>
+                                        </div>
+                                        <div class="categoryItemStats">
+                                            <span class="forumStatsTitle">Clicks</span><br>21.1K
+                                        </div>
+                                        <div class="categoryItemLastPost"><span class="smallText"><strong><i class="fa-solid fa-arrow-pointer"></i> Last click:</strong> <span class="timestampText">Date and Time</span></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentRight">
+                    <div class="blockBox">
+                        <div class="blockBoxHeader" id="welcomebox-header">
+                            <div class="table">
+                                <div class="tableRow">
+                                    <div class="genericLeftCell">Welcome!</div>
+                                    <div class="genericRightCell"><a href="javascript:void(0);" class="tooltip tooltip--top" data-tooltip="Toggle" data-header="welcomebox-header" data-content="welcomebox-content" data-icon="welcomebox-icon" data-collapse="fa-regular fa-circle-up" data-expand="fa-regular fa-circle-down" onclick="toggle(this);"><i class="fa-regular fa-circle-up" id="welcomebox-icon"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blockBoxContentPadded" id="welcomebox-content">Welcome to our online community. Feel free to look around and see what content our members have posted.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <footer>
     <div class="floater">

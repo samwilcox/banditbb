@@ -3,6 +3,7 @@ var isWaiting = false;
 var linkElement = null;
 var closeCard = false;
 var hovercards = {};
+var ignoredElements = null;
 
 $( document ).ready( function() {
     $( document ).mousemove( function( e ) {
@@ -28,7 +29,22 @@ function waitingForChange( callback ) {
         if ( currentHoverElement == linkElement || currentHoverElement == 'hovercard' ) {
             callback( false );
         } else {
-            callback( true );
+            var found = false;
+
+            if ( ignoredElements != null ) {
+                for ( var i = 0; i < ignoredElements.length; i++ ) {
+                    if ( currentHoverElement == ignoredElements[i] ) {
+                        found = true;
+                        break;
+                    }
+                }
+            } 
+
+            if ( found ) {
+                callback( false );
+            } else {
+                callback( true );
+            }
         }
     }, 2000);
 }
@@ -44,6 +60,7 @@ function watchMouse() {
 function closeHovercard() {
     linkElement = null;
     isWaiting = false;
+    ignoredElements = null;
     $( "#hovercard" ).fadeOut();
     $( "#hovercard" ).html( '' );
 }
@@ -55,6 +72,8 @@ function openHovercard( e ) {
     var card = $( "#hovercard" );
     var anchorElement = $( "#" + $( e ).data( 'link' ) );
     var difference = ( $( window ).width() - anchorElement.offset().left );
+    var ignored = $( e ).data( 'ignored' );
+    ignoredElements = ignored.split( ',' );
 
     if ( card.width() >= difference ) {
         card.css( { "left":( anchorElement.offset().left - card.width() + anchorElement.width() ) + "px" } );
@@ -64,28 +83,28 @@ function openHovercard( e ) {
 
     card.css( { "top":( anchorElement.offset().top - card.height() ) + "px" } );
 
-    if ( hovercards[memberId] === undefined ) {
-        $.ajax({
-            url: json.wrapper,
-            type: 'get',
-            data: {
-                'controller':'ajax',
-                'action':'gethovercard',
-                'id':memberId
-            },
-            dataType: 'json',
-            success: function( response ) {
-                if ( response.success ) {
-                    hovercards[memberId] = response.data;
-                    card.html( response.data );
-                } else {
-                    card.html( response.data );
-                }
-            }
-        });
-    } else {
-        card.html( hovercards[memberId] );
-    }
+    // if ( hovercards[memberId] === undefined ) {
+    //     $.ajax({
+    //         url: json.wrapper,
+    //         type: 'get',
+    //         data: {
+    //             'controller':'ajax',
+    //             'action':'gethovercard',
+    //             'id':memberId
+    //         },
+    //         dataType: 'json',
+    //         success: function( response ) {
+    //             if ( response.success ) {
+    //                 hovercards[memberId] = response.data;
+    //                 card.html( response.data );
+    //             } else {
+    //                 card.html( response.data );
+    //             }
+    //         }
+    //     });
+    // } else {
+    //     card.html( hovercards[memberId] );
+    // }
 
     delay( 500 ).then(() => stillOnLink( $( e ).data( 'link' ) ) ? card.fadeIn() : isWaiting = false );
 }

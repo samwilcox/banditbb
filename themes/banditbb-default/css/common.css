@@ -3,9 +3,10 @@
 html { height: 100%; }
 body { font-family: 'Kanit', sans-serif; font-size: 16px; color: #000; background-color: #1B1D21; padding: 0px; margin: 0px; font-weight: 300; height: 100%; }
 header { width: auto; }
-.floater { max-width: 1160px; width: 1160px; margin-left: auto; margin-right: auto; }
+.floater { max-width: 1250px; width: 1250px; margin-left: auto; margin-right: auto; }
 .upperBar { width: auto; color: #FFF; background-color: #000; border-left: 1px solid #404040; border-right: 1px solid #404040; border-bottom: 1px solid #404040; padding-left: 12px; padding-right: 12px; padding-top: 4px; padding-bottom: 4px; font-size: 13px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
 .table { display: table; width: 100%; box-sizing: border-box; border-collapse: separate; border-spacing: 0px; padding: 0px; margin: 0px; }
+.tableNoWidth { display: table; box-sizing: border-box; border-collapse: separate; border-spacing: 0px; padding: 0px; margin: 0px; }
 .tableRow { display: table-row; }
 .genericLeftCell { display: table-cell; vertical-align: middle; }
 .genericRightCell { display: table-cell; vertical-align: middle; text-align: right; }
@@ -20,3 +21,72 @@ footer { width: auto; }
 .footerDebugInfo { width: auto; margin-top: 20px; text-align: center; color: #808080; font-size: 12px; }
 .footerDebugInfo span { display: inline-block; margin-left: 20px; }
 .footerDebugInfo span:first-of-type { margin-left: 0px; }
+.contentLeft { display: table-cell; vertical-align: top; width: auto; }
+.contentRight { display: table-cell; vertical-align: top; width: 280px; padding-left: 20px; }
+.categoryBox { width: auto; border-radius: 5px; border: 1px solid #C0C0C0; background-color: #FFF; padding: 2px; }
+.categoryHeader { width: auto; border-radius: 5px; padding: 12px; font-size: 18px; font-weight: 500; background: rgb(173,178,211); background: -moz-radial-gradient(circle, rgba(173,178,211,1) 0%, rgba(205,208,223,1) 100%); background: -webkit-radial-gradient(circle, rgba(173,178,211,1) 0%, rgba(205,208,223,1) 100%); background: radial-gradient(circle, rgba(173,178,211,1) 0%, rgba(205,208,223,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#adb2d3",endColorstr="#cdd0df",GradientType=1); }
+.categoryItem { width: auto; background-color: #FFF; padding: 12px; border-top: 0px; }
+.categoryItem ~ .categoryItem { border-top: 1px solid #C0C0C0; }
+.tooltip { position: relative; white-space: nowrap; }
+.tooltip::before, .tooltip::after { position: absolute; opacity: 0; visibility: hidden; transition: opacity .3s ease-in-out; }
+.tooltip:hover::before, .tooltip:hover::after { opacity: 1; visibility: visible; font-size: 13px; }
+.tooltip::before { content: attr(data-tooltip); z-index: 2; width: fit-content; color: #fff; background: rgba(0,0,0, .8); border-radius: 5px; padding: 5px; }
+.tooltip::after { content: ""; width: 0; height: 0; }
+.tooltip--top::before, .tooltip--top::after { bottom: 100%; left: 50%; transform: translate(-50%); margin-bottom: 15px; }
+.tooltip--top::after { margin-bottom: 8px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 7px solid rgba(0,0,0, .8); }
+.tooltip--bottom::before, .tooltip--bottom::after { top: 100%; left: 50%; transform: translate(-50%); margin-top: 15px; }
+.tooltip--bottom::after { margin-top: 8px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 7px solid rgba(0,0,0, .8); }
+.tooltip--right::before, .tooltip--right::after { top: 50%; left: 100%; transform: translate(0, -50%); margin-left: 15px; }
+.tooltip--right::after { margin-left: 8px; border-top: 5px solid transparent; border-right: 7px solid rgba(0,0,0, .8); border-bottom: 5px solid transparent; }
+.tooltip--left::before, .tooltip--left::after { top: 50%; right: 100%; transform: translate(0, -50%); margin-right: 15px; }
+.tooltip--left::after { margin-right: 8px; border-top: 5px solid transparent; border-left: 7px solid rgba(0,0,0, .8); border-bottom: 5px solid transparent; }
+.flex { display: flex; }
+.sideBySideLeft { white-space: nowrap; margin-right: 8px; }
+.sideBySideRight { flex: 1; flex-grow: 1; flex-shrink: 1; }
+.sideBySideLeftReversed { flex: 1; flex-grow: 1; flex-shrink: 1; }
+.sideBySideRightReversed { white-space: nowrap; margin-left: 8px; }
+.photoThumbnail { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 34px; height: 34px; }
+.noPhotoThumbnail { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 40px; height: 40px; font-size: 28px; }
+.photo { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 100px; height: 100px; }
+.photoHovercard { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 80px; height: 80px; }
+.noPhoto { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 100px; height: 100px; font-size: 70px; }
+.photoThumbnailUserBar { display: table-cell; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 25px; height: 25px; margin-top: auto; margin-bottom: auto; text-align: center; font-weight: 400; }
+.categoryItemIcon { display: table-cell; vertical-align: middle; white-space: nowrap; padding-right: 20px; line-height: 1em; }
+.categoryItemInfo { display: table-cell; vertical-align: middle; width: 50%; padding-right: 20px; line-height: 1em; }
+.categoryItemStats { display: table-cell; vertical-align: middle; width: 20%; padding-right: 20px; line-height: 1em; text-align: center; }
+.categoryItemLastPost { display: table-cell; vertical-align: middle; width: 30%; line-height: 1em; }
+.categoryItemLastPost strong { font-weight: 400; }
+.categoryStatusIcon { color: #4653BB; font-size: 30px; }
+.categoryStatusIconRead { color: #808080; font-size: 30px; }
+.forumDescription { font-size: 12px; color: #404040; font-style: italic; }
+.forumStatsItem { display: table-cell; vertical-align: middle; text-align: center; width: 50%; }
+.forumStatsTitle { font-size: 13px; text-transform: uppercase; color: #808080; }
+.smallText { font-size: 12px; }
+.timestampText { color: #808080; }
+.blockBox { width: auto; background-color: #F3F4F7; border-radius: 5px; padding: 2px; border: 1px solid #CBCEE1; margin-top: 0; line-height: 1em; }
+.blockBox ~ .blockBox { margin-top: 20px; } 
+.blockBoxHeader { width: auto; padding: 12px; font-size: 17px; font-weight: 600; color: #4653BB; }
+.blockBoxContentPadded { width: auto; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; font-size: 14px; }
+.dropDownMenu { position: absolute; top: 0; left: 0; z-index: 25; border-radius: 5px; background-color: #FFF; box-shadow: 0px 0px 5px #000; display: none; }
+.hovercard { position: absolute; line-height: 1em; top: 0; left: 0; z-index: 25; border-radius: 5px; background-color: #FFF; border: 1px solid #000; padding: 2px; display: none; }
+.backgroundDisabler { position: fixed; top: 0; left: 0; z-index: 28; background: rgba(70,83,187,0.4); width: 100%; height: 100%; display: none; }
+.dialog { position: fixed; line-height: 1em; left: 50%; top: 50%; z-index: 30; border-radius: 5px; box-shadow: 0px 0px 6px #000; background-color: #FFF; padding: 1px; display: none; }
+.dialogHeader { width: auto; padding: 12px; border-radius: 5px; font-size: 20px; line-height: 1em; font-weight: 500; color: #FFF; background: rgb(70,83,187); background: -moz-radial-gradient(circle, rgba(70,83,187,1) 0%, rgba(33,49,149,1) 100%); background: -webkit-radial-gradient(circle, rgba(70,83,187,1) 0%, rgba(33,49,149,1) 100%); background: radial-gradient(circle, rgba(70,83,187,1) 0%, rgba(33,49,149,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4653bb",endColorstr="#213195",GradientType=1); }
+.dialogContentNoBar { width: auto; background-color: #FFF; padding: 12px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.dialogContent { width: auto; background-color: #FFF; padding: 12px; }
+.dialogFooter { width: auto; border-radius: 5px; background-color: #DADBE0; padding: 12px; }
+.logoHover { opacity: 1; border: 0px; }
+.logoHover:hover { opacity: 0.5; border: 0px; }
+.hovercardBackgroundPhoto { width: auto; border-radius: 5px; height: 60px; position: relative; background-position: center; background-repeat: no-repeat; background-size: cover; background-color: #4653BB; background: var(--background); background-color: #838CBF; }
+.hovercardPhotoFloater { position: absolute; bottom: -105px; left: 20px; z-index: 26; }
+.hovercardContent { width: auto; background-color: #FFF; padding-right: 12px; padding-top: 12px; padding-bottom: 12px; padding-left: 120px; line-height: 1em; }
+.hovercardSubContent { width: auto; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; line-height: 1em; }
+.hovercardMemberSince { font-size: 14px; color: #404040; }
+.onlineStatusDot { display: inline-block; background-color: #008000; border: 1px solid #000; border-radius: 50%; height: 10px; width: 10px; }
+.offlineStatusDot { display: inline-block; background-color: #FF0000; border: 1px solid #000; border-radius: 50%; height: 10px; width: 10px; }
+.relative { position: relative; }
+.hovercardBubble { width: auto; border-radius: 5px; padding-left: 18px; padding-right: 18px; padding-top: 6px; padding-bottom: 6px; background-color: #F3F4F7; text-align: center; font-size: 12px; border: 1px solid #CBCEE1; }
+.hovercardCell { display: table-cell; vertical-align: top; padding-left: 0px; }
+.hovercardCell ~ .hovercardCell { padding-left: 12px; }
+.hovercardStatTitle { font-weight: 400; }
+.hovercardFooter { width: auto; border-radius: 5px; padding: 12px; background-color: #F3F4F7; font-size: 14px; }

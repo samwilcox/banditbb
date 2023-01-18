@@ -11,11 +11,14 @@
  * https://license.banditbb.com
  */
 
-error_reporting( E_ALL );
-ini_set( 'display_errors', true );
-// error_reporting( 0 );
+namespace BanditBB\Data;
 
-define( 'ROOT_PATH', dirname( __FILE__ ) . '/' );
+if ( ! defined( 'APP_STARTED' ) ) {
+    \header( isset( $_SERVER['SERVER_PROTOCOL'] ) ? $_SERVER['SERVER_PROTOCOL'] : 'HTTP/1.0 403 forbidden' );
+    exit(1);
+}
 
-require_once ( ROOT_PATH . 'application/BanditBB.php' );
-\BanditBB\Application::run();
+interface QueriesStructure {
+
+    
+}

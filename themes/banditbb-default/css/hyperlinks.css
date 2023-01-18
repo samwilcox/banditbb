@@ -18,3 +18,27 @@
 .footerBar a:hover { color: #FFF; text-decoration: underline; }
 .footerBarLeft a, .footerBarLeft a:link, .footerBarLeft a:active, .footerBarLeft a:visited { color: #FFF; text-decoration: none; margin-right: 20px; }
 .footerBarLeft a:hover { color: #FFF; text-decoration: underline; } 
+.categoryHeaderLeft a, .categoryHeaderLeft a:link, .categoryHeaderLeft a:active, .categoryHeaderLeft a:visited { color: #000; text-decoration: none; }
+.categoryHeaderLeft a:hover { color: #000; text-decoration: underline; }
+.categoryHeaderRight a, .categoryHeaderRight a:link, .categoryHeaderRight a:active, .categoryHeaderRight a:visited { color: #404040; text-decoration: none; transition: 0.3s; }
+.categoryHeaderRight a:hover { color: #000; text-decoration: none; transition: 0.3s; }
+.forumLink a, .forumLink a:link, .forumLink a:active, .forumLink a:visited { color: #4653BB; text-decoration: none; font-size: 19px; font-weight: 300; }
+.forumLink a:hover { color: #4653BB; text-decoration: underline; }
+.subForumsLink a, .subForumsLink a:link, .subForumsLink a:active, .subForumsLink a:visited { color: #000; text-decoration: none; transition: 0.3s; font-weight: 500; font-size: 13px; margin-top: 4px; display: inline-block; }
+.subForumsLink a:hover { color: #404040; text-decoration: none; transition: 0.3s; }
+a, a:link, a:active, a:visited { color: #4653BB; text-decoration: none; }
+a:hover { color: #4653BB; text-decoration: underline; }
+.blockBoxHeader a, .blockBoxHeader a:link, .blockBoxHeader a:active, .blockBoxHeader a:visited { color: #4653BB; text-decoration: none; transition: 0.3s; }
+.blockBoxHeader a:hover { color: #07114B; text-decoration: none; transition: 0.3s; }
+.dropDownMenuLinks a, .dropDownMenuLinks a:link, .dropDownMenuLinks a:active, a:visited { display: block; padding-top: 4px; padding-bottom: 4px; font-size: 14px; text-decoration: none; color: #000; padding-left: 8px; padding-right: 8px; }
+.dropDownMenuLinks a:hover { color: #000; text-decoration: none; transform: 0.3s; background-color: #E5E6ED; border-left: 4px solid #4653BB; border-right: 4px solid #4653BB; padding-left: 4px; padding-right: 4px; }
+.dropDownMenuLinks a:first-of-type { border-top-left-radius: 5px; border-top-right-radius: 5px; }
+.dropDownMenuLinks a:nth-last-of-type(1) { border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.dialogHeader a, .dialogHeader a:link, .dialogHeader a:active, .dialogHeader a:visited { color: #FFF; text-decoration: none; transition: 0.3s; }
+.dialogHeader a:hover { color: #C0C0C0; text-decoration: none; transition: 0.3s; }
+.passwordToggleIcon a, .passwordToggleIcon a:link, .passwordToggleIcon a:active, .passwordToggleIcon a:visited { color: #000; text-decoration: none; transition: 0.3s; }
+.passwordToggleIcon a:hover { color: #4653BB; text-decoration: none; transition: 0.3s; }
+.hovercardTitle a, .hovercardTitle a:link, .hovercardTitle a:active, .hovercardTitle a:visited { color: #000; text-decoration: none; font-size: 22px; font-weight: 400; }
+.hovercardTitle a:hover { color: #000; text-decoration: underline; }
+.hovercardGroupTitle a,.hovercardGroupTitle a:link, .hovercardGroupTitle a:active, .hovercardGroupTitle a:visited { color: #000; text-decoration: none; font-size: 18px; font-weight: 300; }
+.hovercardGroupTitle a:hover { color: #000; text-decoration: underline; }
