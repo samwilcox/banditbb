@@ -1,0 +1,29 @@
+{{marginTop}}<div class="dialog" id="dialog-uploader">
+    <div class="dialogHeader">
+        <div class="table">
+            <div class="tableRow">
+                <div class="genericLeftCell">{LANG.uploader.insertExistingAttachmentTitle}</div>
+                <div class="genericRightCell"><a href="javascript:void(0);" class="tooltip tooltip--right" data-tooltip="{LANG.global.closeDialog}" onclick="closeDialog();"><i class="fa-solid fa-xmark"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="dialogContent" style="overflow: auto; scroll-behavior: auto; max-height: 800px; height: 800px;"><span id="uploader-existing-preloader"><img src="{{imagesetUrl}}/images/preloaders/existing-preloader.gif"></span>
+        <div class="uploaderExistingAttachmentContainer" id="uploader-existing-container"></div>
+    </div>
+</div>
+<div class="uploaderBox" id="drop-zone">
+    <div class="table">
+        <div class="tableRow">
+            <div class="genericLeftCell">
+                <div class="tableNoWidth">
+                    <div class="tableRow">
+                        <div class="uploaderLeft"><i class="fa-solid fa-upload"></i></div>
+                        <div class="uploaderRight"><input type="hidden" name="fileidcollection" value="" id="uploader-fileidcollection"><span style="display: none;" id="uploader-preloader"><img src="{{imagesetUrl}}/images/preloaders/uploader-preloader.gif"></span><input type="file" name="file" class="uploaderInput" id="file-upload" onchange="onFileSelect(this);"><span class="uploaderTitle">{LANG.uploader.uploadFiles}</span><br>{{maxFileSize}}<br><br>{{uploadOrDrag}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="genericRightCell"><a href="javascript:void(0);" id="dialog-uploader-link" data-dialog="dialog-uploader" data-width="1200" onclick="openDialog(this); loadExistingAttachments();">{LANG.uploader.insertExistingAttachment}</a></div>
+        </div>
+    </div>
+    <div class="uploaderPreviewContainer" id="uploader-container"></div>
+</div>

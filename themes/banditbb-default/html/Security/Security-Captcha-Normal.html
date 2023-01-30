@@ -1,0 +1,10 @@
+<div class="captchaBox">
+    <div class="captchaBoxHeader"><i class="fa-solid fa-person"></i> {LANG.securityhelper.humanVerificationTitle}</div>
+    <div class="captchaBoxInfo">{LANG.securityhelper.humanVerificationInfo}</div>
+    <div class="tableNoWidth">
+        <div class="tableRow">
+            <div class="captchaBoxLeft"><img src="{{url}}" class="captchaBorder" id="captcha-image-{{hash}}"><span class="captchaReload"><a href="javascript:void(0);" class="tooltip tooltip--right" data-tooltip="{LANG.securityhelper.refreshTooltip}" data-image="captcha-image-{{hash}}" data-field="captcha-field-{{hash}}" onclick="refreshCaptcha(this);"><i class="fa-solid fa-rotate"></i></a></span></div>
+            <div class="captchaBoxRight"><input type="text" name="captchacode" placeholder="{LANG.securityhelper.captchaFieldPlaceholder}" id="captcha-field-{{hash}}" class="captchaField"></div>
+        </div>
+    </div>
+</div>

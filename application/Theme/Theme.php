@@ -24,11 +24,12 @@ class Theme extends \BanditBB\Application {
 
     public function __construct() {
         self::member()->populateVarsUsingOutput([
-            'noPhotoClass'               => self::getThemePartial( 'Global', 'Class', 'NoPhoto' ),
-            'noPhotoThumbnailClass'      => self::getThemePartial( 'Global', 'Class', 'NoPhotoThumbnail' ),
-            'photoClass'                 => self::getThemePartial( 'Global', 'Class', 'Photo' ),
-            'photoThumbnailClass'        => self::getThemePartial( 'Global', 'Class', 'PhotoThumbnail' ),
-            'photoThumbnailTinyClass'    => self::getThemePartial( 'Global', 'Class', 'PhotoThumbnailTiny' )
+            'noPhotoClass'                  => self::getThemePartial( 'Global', 'Class', 'NoPhoto' ),
+            'noPhotoThumbnailClass'         => self::getThemePartial( 'Global', 'Class', 'NoPhotoThumbnail' ),
+            'photoClass'                    => self::getThemePartial( 'Global', 'Class', 'Photo' ),
+            'photoThumbnailClass'           => self::getThemePartial( 'Global', 'Class', 'PhotoThumbnail' ),
+            'photoThumbnailUserBarClass'    => self::getThemePartial( 'Global', 'Class', 'PhotoThumbnailUserBar' ),
+            'photoThumbnailNotifyItem'      => self::getThemePartial( 'Global', 'Class', 'PhotoThumbnailNotifyItem' )
         ]);
     }
 

@@ -44,7 +44,7 @@ class Request extends \BanditBB\Application {
         if ( self::settings()->seoEnabled ) {
             if ( \strlen( $_SERVER['QUERY_STRING'] ) > 0 ) {
                 if ( ! \stripos( $_SERVER['QUERY_STRING'], '&' ) ) {
-                    if ( \count( $_POST ) > 1 ) {
+                    if ( \count( $_POST ) < 1 ) {
                         $bits = \explode( '/', $_SERVER['QUERY_STRING'] );
                     }
                 }

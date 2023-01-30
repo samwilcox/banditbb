@@ -11,9 +11,9 @@
  * https://license.banditbb.com
  */
 
-error_reporting( E_ALL );
-ini_set( 'display_errors', true );
-// error_reporting( 0 );
+// error_reporting( E_ALL );
+// ini_set( 'display_errors', true );
+error_reporting( 0 );
 
 define( 'ROOT_PATH', dirname( __FILE__ ) . '/' );
 

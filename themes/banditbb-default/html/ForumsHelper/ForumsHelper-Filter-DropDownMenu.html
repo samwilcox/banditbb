@@ -1,0 +1,16 @@
+<div class="dropDownMenu" id="dropdownmenu-forumfilter">
+    <form name="forumfilterform" action="{{wrapper}}" method="post" enctype="multipart/form-data">
+        <div class="dropDownMenuHeader">{LANG.forumshelper.forumFilterTitle}</div>
+        <div class="dropDownMenuContent filterDropDown" id="forum-filter-content">
+            {LANG.forumshelper.filterOnlyShow} <select name="started" class="filterDropDownSelect" id="forum-filter-timeframe">{{timeframe}}</select><br><br>
+            {LANG.forumshelper.filterSortTopicsBy} <select name="sortby" class="filterDropDownSelect" id="forum-filter-sortby">{{sortBy}}</select> {LANG.forumshelper.filterIn} <select name="sortorder" class="filterDropDownSelect" id="forum-filter-sortorder">{{sortOrder}}</select> {LANG.forumshelper.filterOrder}<br><br>
+        </div>
+        <div class="dropDownMenuFooter">
+            <input type="hidden" name="controller" value="forums">
+            <input type="hidden" name="action" value="view">
+            <input type="hidden" name="id" value="{{forumId}}">
+            <input type="hidden" name="page" value="{{page}}">
+            <input type="submit" name="applyfilterbutton" value="{LANG.forumshelper.filterApplyFilterButton}" class="longField smallerButton">
+        </div>
+    </form>
+</div> 

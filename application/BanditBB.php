@@ -88,7 +88,23 @@ class Application {
     protected static function seo() { return \BanditBB\Url\Seo::i(); }
     protected static function url() { return \BanditBB\Url\Url::i(); }
     protected static function member() { return \BanditBB\Users\Member::i(); }
-    protected static function barHelper() { return null; }
+    protected static function widgets() { return \BanditBB\Widgets\Widgets::i(); }
+    protected static function widgetsHelper() { return \BanditBB\Helpers\Widgets::i(); }
+    protected static function utilities() { return \BanditBB\Helpers\Utilities::i(); }
+    protected static function authentication() { return \BanditBB\Helpers\Authentication::i(); }
+    protected static function forums() { return \BanditBB\Helpers\Forums::i(); }
+    protected static function topics() { return \BanditBB\Helpers\Topics::i(); }
+    protected static function textParsing() { return \BanditBB\Helpers\TextParsing::i(); }
+    protected static function security() { return \BanditBB\Security\Security::i(); }
+    protected static function errors() { return \BanditBB\Helpers\Errors::i(); }
+    protected static function captcha() { return \BanditBB\Security\Captcha::i(); }
+    protected static function pagination() { return \BanditBB\Helpers\Pagination::i(); }
+    protected static function buttons() { return \BanditBB\Helpers\Buttons::i(); }
+    protected static function followers() { return \BanditBB\Helpers\Followers::i(); }
+    protected static function whosOnline() { return \BanditBB\Helpers\WhosOnline::i(); }
+    protected static function posts() { return \BanditBB\Helpers\Posts::i(); }
+    protected static function editor() { return \BanditBB\Editor\Editor::i(); }
+    protected static function upload() { return \BanditBB\Helpers\Upload::i(); }
 
     /**
      * End of application references

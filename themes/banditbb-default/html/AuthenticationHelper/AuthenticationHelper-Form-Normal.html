@@ -1,0 +1,10 @@
+{{errorBox}}<form name="signin{{type}}form" action="{{wrapper}}" method="post" enctype="multipart/form-data"{{onSubmit}}>
+    <span class="relative"><i class="fa-solid fa-user identityFieldIcon"></i><input type="text" name="identity" placeholder="{{identityPlaceholder}}" class="identityField"></span>
+    <span class="relative"><i class="fa-solid fa-key passwordFieldIcon"></i><input type="password" name="password" id="password-field-box" placeholder="{LANG.authenticationhelper.passwordPlaceholder}" class="passwordField"><span class="passwordToggleIcon"><a href="javascript:void(0);" data-field="password-field-box" data-icon="password-icon-box" onclick="togglePasswordField(this);"><i class="fa-solid fa-eye-slash" id="password-icon-box"></i></a></span></span><br><br>
+    <label class="checkboxLabel">{LANG.authenticationhelper.rememberMeTitle}<br><span class="checkboxDesc">{LANG.authenticationhelper.rememberMeInfo}</span><input type="checkbox" name="rememberme" value="1"><span class="checkmark"></span></label><br>
+    {{captcha}}{{options}}
+    <input type="hidden" name="controller" value="authentication">
+    <input type="hidden" name="action" value="authenticate">
+    <input type="hidden" name="url" value="{{url}}">{{captchaHidden}}{{csrfToken}}
+    <input type="submit" name="signin-normal-submitbutton" value="{LANG.authenticationhelper.signInButton}" class="longField">
+</form>

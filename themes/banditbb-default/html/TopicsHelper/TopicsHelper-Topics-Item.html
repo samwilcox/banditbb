@@ -1,0 +1,23 @@
+<div class="topicsListItem">
+    <div class="table">
+        <div class="tableRow">
+            <div class="topicsListItemInfo">
+                {{link}}<br>
+                <span class="smallText">{{startedBy}}</span>
+            </div>
+            <div class="topicsListItemOptions">{{pinned}}{{locked}}{{attachments}}{{solution}}{{hot}}</div>
+            <div class="topicsListItemStats">
+                <span class="topicsListStatTitle">{LANG.topicshelper.replies}</span><br>{{totalReplies}}
+            </div>
+            <div class="topicsListItemStats">
+                <span class="topicsListStatTitle">{LANG.topicshelper.views}</span><br>{{totalViews}}
+            </div>
+            <div class="topicsListItemLastPost">
+                <div class="flex">
+                    <div class="sideBySideLeftReversed upLineHeight">{{lastPostLink}}<br><span class="smallText timestampText"><i class="fa-regular fa-clock"></i> {{lastPostTimestamp}}</span></div>
+                    <div class="sideBySideRightReversed">{{lastPostPhoto}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

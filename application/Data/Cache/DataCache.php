@@ -43,6 +43,7 @@ class DataCache extends \BanditBB\Application {
             'members_notifications',
             'members_photos',
             'members_reputation',
+            'members_friends',
             'messages_map',
             'messages_posts',
             'messages_topics',
@@ -51,7 +52,10 @@ class DataCache extends \BanditBB\Application {
             'registry',
             'sessions',
             'session_store',
-            'topics'
+            'topics',
+            'widgets',
+            'widgets',
+            'widget_placement'
         ];
 
         self::$sorting = [
@@ -78,8 +82,11 @@ class DataCache extends \BanditBB\Application {
             'members_attachments'     => ' ORDER BY attachmentId ASC',
             'members_reputation'      => ' ORDER BY reputationId ASC',
             'members_likes'           => ' ORDER BY likeId ASC',
+            'members_friends'         => ' ORDER BY friendId ASC',
             'polls'                   => ' ORDER BY pollId ASC',
-            'feature_permissions'     => ' ORDER BY permissionId ASC'
+            'feature_permissions'     => ' ORDER BY permissionId ASC',
+            'widgets'                 => ' ORDER BY widgetId ASC',
+            'widget_placement'        => ' ORDER BY placementId ASC'
         ];
     }
 

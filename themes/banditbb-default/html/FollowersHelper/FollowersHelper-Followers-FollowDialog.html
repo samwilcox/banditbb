@@ -1,0 +1,27 @@
+<div class="dialog" id="dialog-newfollow">
+    <div class="dialogHeader">
+        <div class="table">
+            <div class="tableRow">
+                <div class="genericLeftCell">{LANG.followershelper.newFollowDialogTitle}</div>
+                <div class="genericRightCell"><a href="javascript:void(0);" class="tooltip tooltip--right" data-tooltip="{LANG.global.closeDialog}" onclick="closeDialog();"><i class="fa-solid fa-xmark"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="dialogContent">
+        <form name="followcontentform" action="{{wrapper}}" method="post" enctype="multipart/form-data">
+        <strong>{LANG.followershelper.iWouldLike}</strong><br><br>
+        <label class="radioLabel radioNormalText">{LANG.followershelper.immediate}<br><input type="radio" name="notificationoption" value="immediate" id="followoptions-immediate" checked><span class="radiomark"></span></label><br>
+        <label class="radioLabel radioNormalText">{LANG.followershelper.daily}<br><input type="radio" name="notificationoption" value="daily" id="followoptions-daily"><span class="radiomark"></span></label><br>
+        <label class="radioLabel radioNormalText">{LANG.followershelper.weekly}<br><input type="radio" name="notificationoption" value="weekly" id="followoptions-weekly"><span class="radiomark"></span></label><br>
+        <label class="radioLabel radioNormalText">{LANG.followershelper.monthly}<br><input type="radio" name="notificationoption" value="monthly" id="followoptions-monthly"><span class="radiomark"></span></label><br>
+        <div class="seperateBar"></div>
+        <label class="checkboxLabel labelNormalText">{LANG.followershelper.letOthersSee}<br><input type="checkbox" name="display" value="1" id="followoptions-display" checked><span class="checkmark"></span></label><br>
+        <div class="seperateBar"></div>
+        <input type="hidden" name="controller" value="followers">
+        <input type="hidden" name="action" value="follow">
+        <input type="hidden" name="id" value="{{id}}">
+        <input type="hidden" name="following" value="{{following}}">
+        <input type="submit" name="followbutton" value="{LANG.followershelper.followButton}">
+        </form>
+    </div>
+</div>

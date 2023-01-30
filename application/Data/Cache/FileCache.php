@@ -33,7 +33,7 @@ class FileCache extends \BanditBB\Data\Cache\DataCache implements \BanditBB\Data
 
         foreach ( self::$sorting as $k => $v ) {
             if ( $k == $table ) {
-                $sorting = $k;
+                $sorting = $v;
                 break;
             }
         }

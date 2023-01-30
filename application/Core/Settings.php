@@ -54,6 +54,8 @@ class Settings extends \BanditBB\Application {
         } else {
             self::vars()->baseUrl = $appUrl;
         }
+
+        self::vars()->wrapper = self::vars()->baseUrl . '/' . APP_WRAPPER . '.php';
     }
 
     public function __set( $key, $value ) {

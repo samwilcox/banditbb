@@ -1,32 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html { height: 100%; }
-body { font-family: 'Kanit', sans-serif; font-size: 16px; color: #000; background-color: #1B1D21; padding: 0px; margin: 0px; font-weight: 300; height: 100%; }
-header { width: auto; }
-.floater { max-width: 1250px; width: 1250px; margin-left: auto; margin-right: auto; }
-.upperBar { width: auto; color: #FFF; background-color: #000; border-left: 1px solid #404040; border-right: 1px solid #404040; border-bottom: 1px solid #404040; padding-left: 12px; padding-right: 12px; padding-top: 4px; padding-bottom: 4px; font-size: 13px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+body { font-family: 'Kanit', sans-serif; font-size: 16px; color: #000; background-color: #FFF; padding: 0px; margin: 0px; line-height: 1em; }
+header { width: auto; background-color: #FFF; padding-top: 12px; padding-bottom: 12px; box-shadow: 1px 1px 5px #808080; border-bottom: #C0C0C0; }
+.floater { width: 70%; margin-left: auto; margin-right: auto; }
 .table { display: table; width: 100%; box-sizing: border-box; border-collapse: separate; border-spacing: 0px; padding: 0px; margin: 0px; }
 .tableNoWidth { display: table; box-sizing: border-box; border-collapse: separate; border-spacing: 0px; padding: 0px; margin: 0px; }
+.tableNoWidthRight { display: table; box-sizing: border-box; border-collapse: separate; border-spacing: 0px; padding: 0px; margin: 0px; margin-left: auto; margin-right: 0; }
 .tableRow { display: table-row; }
+.headerLeft { display: table-cell; vertical-align: middle; width: 20%; }
+.headerCenter { display: table-cell; vertical-align: middle; width: 60%; text-align: center; }
+.headerRight { display: table-cell; vertical-align: middle; width: 20%; text-align: right; }
+.breadcrumbsBar { width: auto; margin-top: 6px; font-size: 13px; margin-bottom: 30px; }
 .genericLeftCell { display: table-cell; vertical-align: middle; }
 .genericRightCell { display: table-cell; vertical-align: middle; text-align: right; }
-.middleBar { width: auto; margin-top: 30px; }
-.menuBar { width: auto; margin-top: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; background-color: #4653BB; color: #FFF; padding: 0px; border-top: 1px solid #4653BB; }
-.contentBox { width: auto; background-color: #FFF; padding: 18px; }
-footer { width: auto; }
-.footerBar { width: auto; background-color: #4653BB; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; font-size: 13px; color: #FFF; }
-.footerBarLeft { display: table-cell; vertical-align: middle; width: 33%; }
-.footerBarCenter { display: table-cell; vertical-align: middle; width: 34%; text-align: center; }
-.footerBarRight { display: table-cell; vertical-align: middle; width: 33%; text-align: right; }
-.footerDebugInfo { width: auto; margin-top: 20px; text-align: center; color: #808080; font-size: 12px; }
-.footerDebugInfo span { display: inline-block; margin-left: 20px; }
-.footerDebugInfo span:first-of-type { margin-left: 0px; }
-.contentLeft { display: table-cell; vertical-align: top; width: auto; }
-.contentRight { display: table-cell; vertical-align: top; width: 280px; padding-left: 20px; }
-.categoryBox { width: auto; border-radius: 5px; border: 1px solid #C0C0C0; background-color: #FFF; padding: 2px; }
-.categoryHeader { width: auto; border-radius: 5px; padding: 12px; font-size: 18px; font-weight: 500; background: rgb(173,178,211); background: -moz-radial-gradient(circle, rgba(173,178,211,1) 0%, rgba(205,208,223,1) 100%); background: -webkit-radial-gradient(circle, rgba(173,178,211,1) 0%, rgba(205,208,223,1) 100%); background: radial-gradient(circle, rgba(173,178,211,1) 0%, rgba(205,208,223,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#adb2d3",endColorstr="#cdd0df",GradientType=1); }
-.categoryItem { width: auto; background-color: #FFF; padding: 12px; border-top: 0px; }
-.categoryItem ~ .categoryItem { border-top: 1px solid #C0C0C0; }
+.blockLeft { display: table-cell; vertical-align: top; width: 280px; padding-right: 20px; }
+.blockBody { display: table-cell; vertical-align: top; width: auto; }
+.blockRight { display: table-cell; vertical-align: top; width: 280px; padding-left: 20px; }
+.blockBox { width: auto; border-radius: 5px; border: 1px dashed #C0C0C0; background-color: #FEFEFE; }
+.blockHeader { width: auto; padding: 12px; font-size: 18px; font-weight: 500; color: #007FD0; }
+.blockContent { width: auto; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; font-size: 14px; }
+.categoryHeader { width: auto; font-size: 24px; font-weight: 500; margin-top: 0px; }
+.categoryHeader ~ .categoryHeader { margin-top: 30px; }
+.categoryContent { width: auto; margin-top: 20px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start space-evenly; row-gap: 20px; column-gap: 20px; }
+.subForumsSpacer { width: auto; margin-bottom: 50px; }
+.forumCard { display: flex; flex-direction: column; flex-grow: 0; flex-shrink: 1; flex-basis: 32%; width: 32%; }
+.forumCardUpper { width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; flex-flow: column; justify-content: center; align-items: center; box-sizing: border-box; color: #FFF; text-shadow: 1px 1px 1px #000; font-size: 26px; position: relative; border-top-left-radius: 5px; border-top-right-radius: 5px; background-color: #007FD0; background: radial-gradient(circle, rgba(0,0,0,1), 15%, rgba(0,0,0,0)), var(--background); padding: 12px; display: flex; justify-content: center; align-items: center; min-height: 250px; z-index: 1; }
+.forumCardUpper::before { position: absolute; content: ''; top: 0; left: 0; bottom: 0; right: 0; background: radial-gradient(circle, rgba(0,0,0,1), 0%, rgba(0,0,0,0)), var(--background); background-position: center; background-size: cover; z-index: -1; transition: opacity 0.3s linear; opacity: 0; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+.forumCardUpper:hover { cursor: pointer; background-color: unset; }
+.forumCardUpper:hover::before { opacity: 1; }
+.forumCardUpper i { margin-right: 4px; }
+.forumCardUpperData { font-size: 13px; color: #C0C0C0; text-shadow: 1px 1px 1px #000; text-transform: uppercase; }
+.forumCardUpperData span { display: inline-block; margin-left: 12px; }
+.forumCardUpperData span ~ .forumCardUpperData span { margin-left: 0px; }
+.forumCardLower { width: 100%; box-sizing: border-box; background-color: #FDFDFD; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; border-left: 1px dashed #C0C0C0; border-right: 1px dashed #C0C0C0; border-bottom: 1px dashed #C0C0C0; display: flex; flex-direction: column; flex-grow: 1; }
+.forumCardLowerDescription { width: 100%; box-sizing: border-box; padding: 12px; border-bottom: 1px dashed #C0C0C0; font-size: 14px; color: #404040; display: flex; flex-direction: column; flex-grow: 1; font-style: italic; }
+.forumCardLowerLastPost { width: 100%; box-sizing: border-box; padding: 12px; line-height: 1.1em; }
+.forumCardLowerLastPost strong { font-weight: 500; }
 .tooltip { position: relative; white-space: nowrap; }
 .tooltip::before, .tooltip::after { position: absolute; opacity: 0; visibility: hidden; transition: opacity .3s ease-in-out; }
 .tooltip:hover::before, .tooltip:hover::after { opacity: 1; visibility: visible; font-size: 13px; }
@@ -48,45 +58,155 @@ footer { width: auto; }
 .photoThumbnail { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 34px; height: 34px; }
 .noPhotoThumbnail { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 40px; height: 40px; font-size: 28px; }
 .photo { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 100px; height: 100px; }
-.photoHovercard { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 80px; height: 80px; }
+.photoHovercard { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 80px; height: 80px; font-size: 70px; }
 .noPhoto { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 100px; height: 100px; font-size: 70px; }
 .photoThumbnailUserBar { display: table-cell; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 25px; height: 25px; margin-top: auto; margin-bottom: auto; text-align: center; font-weight: 400; }
-.categoryItemIcon { display: table-cell; vertical-align: middle; white-space: nowrap; padding-right: 20px; line-height: 1em; }
-.categoryItemInfo { display: table-cell; vertical-align: middle; width: 50%; padding-right: 20px; line-height: 1em; }
-.categoryItemStats { display: table-cell; vertical-align: middle; width: 20%; padding-right: 20px; line-height: 1em; text-align: center; }
-.categoryItemLastPost { display: table-cell; vertical-align: middle; width: 30%; line-height: 1em; }
-.categoryItemLastPost strong { font-weight: 400; }
-.categoryStatusIcon { color: #4653BB; font-size: 30px; }
-.categoryStatusIconRead { color: #808080; font-size: 30px; }
-.forumDescription { font-size: 12px; color: #404040; font-style: italic; }
-.forumStatsItem { display: table-cell; vertical-align: middle; text-align: center; width: 50%; }
-.forumStatsTitle { font-size: 13px; text-transform: uppercase; color: #808080; }
+.photoThumbnailNotifyItem { display: table-cell; align-items: center; justify-content: center; border-radius: 50%; padding: 2px; width: 25px; height: 25px; margin-top: auto; margin-bottom: auto; text-align: center; font-weight: 400; }
 .smallText { font-size: 12px; }
+.smallText strong { font-weight: 500; }
 .timestampText { color: #808080; }
-.blockBox { width: auto; background-color: #F3F4F7; border-radius: 5px; padding: 2px; border: 1px solid #CBCEE1; margin-top: 0; line-height: 1em; }
-.blockBox ~ .blockBox { margin-top: 20px; } 
-.blockBoxHeader { width: auto; padding: 12px; font-size: 17px; font-weight: 600; color: #4653BB; }
-.blockBoxContentPadded { width: auto; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; font-size: 14px; }
-.dropDownMenu { position: absolute; top: 0; left: 0; z-index: 25; border-radius: 5px; background-color: #FFF; box-shadow: 0px 0px 5px #000; display: none; }
-.hovercard { position: absolute; line-height: 1em; top: 0; left: 0; z-index: 25; border-radius: 5px; background-color: #FFF; border: 1px solid #000; padding: 2px; display: none; }
-.backgroundDisabler { position: fixed; top: 0; left: 0; z-index: 28; background: rgba(70,83,187,0.4); width: 100%; height: 100%; display: none; }
-.dialog { position: fixed; line-height: 1em; left: 50%; top: 50%; z-index: 30; border-radius: 5px; box-shadow: 0px 0px 6px #000; background-color: #FFF; padding: 1px; display: none; }
-.dialogHeader { width: auto; padding: 12px; border-radius: 5px; font-size: 20px; line-height: 1em; font-weight: 500; color: #FFF; background: rgb(70,83,187); background: -moz-radial-gradient(circle, rgba(70,83,187,1) 0%, rgba(33,49,149,1) 100%); background: -webkit-radial-gradient(circle, rgba(70,83,187,1) 0%, rgba(33,49,149,1) 100%); background: radial-gradient(circle, rgba(70,83,187,1) 0%, rgba(33,49,149,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4653bb",endColorstr="#213195",GradientType=1); }
-.dialogContentNoBar { width: auto; background-color: #FFF; padding: 12px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
-.dialogContent { width: auto; background-color: #FFF; padding: 12px; }
-.dialogFooter { width: auto; border-radius: 5px; background-color: #DADBE0; padding: 12px; }
-.logoHover { opacity: 1; border: 0px; }
-.logoHover:hover { opacity: 0.5; border: 0px; }
-.hovercardBackgroundPhoto { width: auto; border-radius: 5px; height: 60px; position: relative; background-position: center; background-repeat: no-repeat; background-size: cover; background-color: #4653BB; background: var(--background); background-color: #838CBF; }
-.hovercardPhotoFloater { position: absolute; bottom: -105px; left: 20px; z-index: 26; }
-.hovercardContent { width: auto; background-color: #FFF; padding-right: 12px; padding-top: 12px; padding-bottom: 12px; padding-left: 120px; line-height: 1em; }
-.hovercardSubContent { width: auto; padding-left: 12px; padding-right: 12px; padding-bottom: 12px; line-height: 1em; }
-.hovercardMemberSince { font-size: 14px; color: #404040; }
-.onlineStatusDot { display: inline-block; background-color: #008000; border: 1px solid #000; border-radius: 50%; height: 10px; width: 10px; }
-.offlineStatusDot { display: inline-block; background-color: #FF0000; border: 1px solid #000; border-radius: 50%; height: 10px; width: 10px; }
+.forumStatusIcon { color: #FFF; }
+.forumStatusIconRead { color: rgba(255, 255, 255, 0.6); }
+footer { width: auto; margin-top: 40px; }
+.footerBar { width: auto; border-radius: 5px; background-color: #FFF; padding: 8px; border: 1px dashed #C0C0C0; font-size: 13px; }
+.footerLeft { display: table-cell; vertical-align: middle; width: 33%; }
+.footerCenter { display: table-cell; vertical-align: middle; width: 34%; text-align: center; }
+.footerRight { display: table-cell; vertical-align: middle; width: 33%; text-align: right; }
+.footerUnder { width: auto; margin-top: 8px; font-size: 13px; padding-bottom: 40px; }
+.debugInformation { color: #808080; }
+.debugInformation span { display: inline-block; margin-right: 20px; }
+.dropDownMenu { border-radius: 5px; background-color: #FFF; box-shadow: 0px 0px 5px #000; position: absolute; top: 100px; left: 100px; z-index: 20; display: none; }
+.dropDownMenu u { width: 100%; box-sizing: border-box; display: block; border-bottom: 1px solid #C0C0C0; height: 1px; }
+.backgroundDisabler { width: 100%; display: none; height: 100%; box-sizing: border-box; position: fixed; top: 0; left: 0; z-index: 28; background: rgba(0,0,0,0.6); }
+.dialog { border-radius: 5px; display: none; background-color: #FFF; box-shadow: 0px 0px 5px #000; position: fixed; left: 50%; top: 80px; margin-top: 0px; z-index: 30; }
+.dialogHeader { width: auto; padding: 12px; border-top-left-radius: 5px; border-top-right-radius: 5px; font-size: 22px; font-weight: 500; color: #FFF; background: rgb(0,127,208); background: -moz-radial-gradient(circle, rgba(0,127,208,1) 0%, rgba(0,50,82,1) 100%); background: -webkit-radial-gradient(circle, rgba(0,127,208,1) 0%, rgba(0,50,82,1) 100%); background: radial-gradient(circle, rgba(0,127,208,1) 0%, rgba(0,50,82,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#007fd0",endColorstr="#003252",GradientType=1); }
+.dialogContent { width: auto; padding: 12px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: #FFF; }
+.dialogContentNoPadding { width: auto; padding: 0px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: #FFF; }
+.dialogContentWithBar { width: auto; padding: 12px; background-color: #FFF; }
+.dialogFooter { width: auto; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: #DDDDDD; padding: 12px; }
 .relative { position: relative; }
-.hovercardBubble { width: auto; border-radius: 5px; padding-left: 18px; padding-right: 18px; padding-top: 6px; padding-bottom: 6px; background-color: #F3F4F7; text-align: center; font-size: 12px; border: 1px solid #CBCEE1; }
-.hovercardCell { display: table-cell; vertical-align: top; padding-left: 0px; }
-.hovercardCell ~ .hovercardCell { padding-left: 12px; }
-.hovercardStatTitle { font-weight: 400; }
-.hovercardFooter { width: auto; border-radius: 5px; padding: 12px; background-color: #F3F4F7; font-size: 14px; }
+.imgHover { opacity: 1; border: 0px; }
+.imgHover:hover { opacity: 0.6; border: 0px; }
+.widgetSpacer { width: auto; margin-top: 20px; }
+.errorBox { position: relative; width: auto; border-radius: 5px; background-color: #FFC0C0; border: 1px solid #FF8080; padding: 12px; margin-bottom: 20px; }
+.errorBoxCloseIcon { position: absolute; top: -6px; right: -6px; z-index: 10; font-size: 22px; }
+.hovercard { border-radius: 5px; width: fit-content; background-color: #FFF; box-shadow: 0px 0px 5px #000; position: absolute; top: 0; left: 0; z-index: 28; display: none; }
+.hovercardHeader { position: relative; width: auto; border-top-left-radius: 5px; border-top-right-radius: 5px; height: 60px; background: var(--background); }
+.hovercardContentUpper { width: auto; background-color: #FFF; padding-left: 120px; padding-top: 8px; padding-right: 12px; }
+.hovercardPhotoFloater { position: absolute; top: 16px; left: 12px; z-index: 29; }
+.hovercardGroupLink strong { font-weight: 500; }
+.hovercardContentLower { width: auto; background-color: #FFF; padding: 12px; }
+.hovercardStats { width: auto; margin-top: 12px; }
+.hovercardStatItem { display: table-cell; vertical-align: middle; padding-left: 0px; }
+.hovercardStatItem ~ .hovercardStatItem { padding-left: 20px; }
+.hovercardStatItem strong { font-weight: 500; font-size: 15px; }
+.hovercardStatBox { width: auto; border-radius: 5px; background-color: #F3F3F3; text-align: center; border: 1px solid #D6D6D6; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; font-size: 13px; }
+.hovercardFooter { width: auto; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: #FCFCFC; border-top: 1px solid #F5F5F5; padding: 12px; text-align: center; }
+.hovercardOnlineDot { border-radius: 50%; border: 1px solid #000; background-color: #008000; width: 12px; height: 12px; display: inline-block; margin-left: 4px; }
+.hovercardOfflineDot { border-radius: 50%; border: 1px solid #000; background-color: #FF0000; width: 12px; height: 12px; display: inline-block; margin-left: 4px; }
+.mediumText { font-size: 13px; }
+.memberUserBarLeft { display: table-cell; vertical-align: middle; padding-right: 30px; }
+.memberUserBarRight { display: table-cell; vertical-align: middle; }
+.sideBySideLeftCell { display: table-cell; vertical-align: middle; padding-right: 8px; }
+.sideBySideRightCell { display: table-cell; vertical-align: middle; }
+.dropDownMenuHeader { width: auto; border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 8px; font-weight: 500; background-color: #E7E7E7; }
+.dropDownMenuContent { width: auto; background-color: #FFF; padding: 8px; }
+.dropDownMenuContentNoPadding { width: auto; background-color: #FFF; padding: 0px; }
+.dropDownMenuContentScroller { width: auto; max-height: 350px; overflow: auto; background-color: #FFF; }
+.dropDownMenuFooter { width: auto; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: #F7F7F7; padding: 8px; font-size: 13px; text-align: center; }
+.notifyItem { width: auto; padding: 8px; font-size: 13px; border-top: 0px; }
+.notifyItem ~ .notifyItem { border-top: 1px dashed #C0C0C0; }
+.notifyItemLeft { display: table-cell; vertical-align: middle; padding-right: 12px; }
+.notifyItemRight { display: table-cell; vertical-align: middle; }
+.notifyIcon { font-size: 22px; }
+.memberUserBarIcon { position: relative; }
+.memberUserBarIcon .badge { border-radius: 5px; font-size: 9px; color: #FFF; background-color: #007FD0; width: fit-content; padding-left: 6px; padding-right: 6px; padding-top: 0px; padding-bottom: 0px; position: absolute; top: -8px; right: -8px; font-weight: bold; z-index: 3; }
+.noItems { font-style: italic; color: #808080; width: 100%; box-sizing: border-box; padding: 8px; text-align: center; }
+.pageTitle { width: auto; font-size: 32px; font-weight: 500; }
+.pageTitleMarginUnder { width: auto; font-size: 24px; font-weight: 500; }
+.pageTitle i { color: #007FD0; }
+.errorInfoText { width: auto; font-style: italic; color: #808080; margin-top: 18px; margin-bottom: 30px; }
+.errorPageBox { width: auto; border-radius: 5px; padding: 20px; background-color: #F5F5F5; border: 1px solid #C0C0C0; }
+.errorPageBoxUnder { width: auto; margin-top: 20px; text-align: center; font-size: 18px; }
+.captchaBox { width: 370px; border-radius: 5px; margin-top: 20px; margin-bottom: 20px; padding: 12px; border: 1px dashed #C0C0C0; background-color: #FAFAFA; }
+.captchaBoxHeader { width: auto; margin-bottom: 4px; font-weight: 500; color: #007FD0; font-size: 18px; }
+.captchaBoxInfo { width: auto; margin-bottom: 12px; font-size: 13px; color: #808080; }
+.captchaBoxLeft { display: table-cell; vertical-align: middle; padding-right: 40px; position: relative; }
+.captchaBoxRight { display: table-cell; vertical-align: middle; }
+.captchaBorder { border: 3px solid #C0C0C0; }
+.captchaReload { position: absolute; top: 36px; right: 16px; font-size: 18px; }
+.recaptchaBox { width: auto; margin-top: 20px; margin-bottom: 20px; }
+.pageTitleDescription { width: auto; font-style: italic; color: #808080; margin-top: 18px; margin-bottom: 30px; }
+.pagination ul { list-style: none; padding: 0px; margin: 0px; display: inline-block; margin-left: -1px; }
+.pagination ul > li:first-child { border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-left: 1px solid #C0C0C0; }
+.pagination li { list-style: none; padding: 0px; margin: 0px; display: inline-block; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0; }
+.pagination .paginationActive { display: inline-block; padding-left: 9px; padding-right: 9px; padding-top: 5px; padding-bottom: 4px; color: #FFF; text-decoration: none; font-weight: bold; transition: 0.3s; border-right: 1px solid #3875EA; background-color: #007FD0; }
+.pagination .paginationDisabled { display: inline-block; padding-left: 9px; padding-right: 9px; padding-top: 5px; padding-bottom: 4px; color: #000; background-color: #FFF; cursor: no-drop; border-bottom: 1px solid #C0C0C0; border-top: 1px solid #C0C0C0; }
+.pagination strong { font-weight: 500; display: inline-block; background-color: #CECFA3; padding-left: 9px; padding-right: 9px; padding-top: 5px; padding-bottom: 4px; color: #FFF; }
+.vAlignTop { vertical-align: top; } 
+.topicsListHeader { width: auto; border-top-left-radius: 5px; border-top-right-radius: 5px; color: #FFF; padding: 12px; background-color: #007FD0; margin-top: 30px; }
+.topicsListHeaderTitle { font-size: 18px; font-weight: 500; }
+.filterDropDown { font-size: 13px; }
+.topicsListItem { width: auto; border-left: 1px solid #C0C0C0; border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0; padding: 12px; }
+.topicsListItem:nth-last-of-type(1) { border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.topicsListItemNone { width: auto; border-left: 1px solid #C0C0C0; border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0; padding: 12px; text-align: center; font-style: italic; color: #404040; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.topicsListItemInfo { display: table-cell; padding-right: 20px; vertical-align: middle; width: 50%; }
+.topicsListItemOptions { display: table-cell; padding-right: 20px; vertical-align: middle; text-align: center; width: 15%; }
+.topicsListItemOptions span { display: inline-block; margin-left: 10px; cursor: help; }
+.topicsListItemStats { display: table-cell; padding-right: 20px; vertical-align: middle; width: 10%; text-align: center; }
+.topicsListItemLastPost { display: table-cell; vertical-align: middle; width: 15%; text-align: right; }
+.topicsListStatTitle { font-size: 13px; text-transform: uppercase; font-weight: 300; color: #808080; }
+.upLineHeight { line-height: 1.2em; }
+.topicsListTopicTitle { font-size: 18px; }
+.dialogContentItem { width: auto; padding: 12px; background-color: #FFF; font-size: 13px; border-top: 1px solid #C0C0C0; }
+.dialogContentItem:first-of-type { border-top: 0px; }
+.dialogContentItem:nth-last-of-type(1) { border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.dialogContentUnderLink { width: auto; margin-top: 20px; padding-bottom: 12px; text-align: center; font-size: 13px; } 
+.followersNonLink { color: #000; font-size: 11px; border-radius: 5px; padding-left: 4px; padding-right: 4px; padding-top: 2px; padding-bottom: 2px; background-color: #FFF; font-weight: 500; }
+.seperateBar { width: auto; border-top: 1px solid #C0C0C0; height: 1px; margin-top: 12px; margin-bottom: 12px; }
+.followersBubble { margin-left: auto; margin-right: 0px; width: fit-content; border-radius: 5px; padding: 6px; background-color: #808080; font-size: 13px; color: #FFF; display: flex; }
+.followersBubbleLeft { white-space: nowrap; }
+.followersBubbleRight { flex: 1; flex-grow: 1; flex-shrink: 1; }
+.usersBrowsingBox { width: auto; margin-top: 30px; }
+.usersBrowsingTitle { width: auto; font-weight: 500; font-size: 22px; margin-bottom: 10px; }
+.usersBrowsingIcons { width: auto; }
+.usersBrowsingIcons span { display: inline-block; margin-right: 12px; border-radius: 5px; padding-left: 12px; padding-right: 12px; padding-top: 2px; padding-bottom: 2px; font-size: 13px; border: 1px dashed #C0C0C0; background-color: #FFF; }
+.usersBrowsingList { width: auto; margin-top: 20px; border-radius: 5px; border: 1px solid #C0C0C0; background-color: #FDFDFD; padding: 6px; font-size: 13px; }
+.barMarginTopBottom { width: auto; margin-top: 20px; margin-bottom: 20px; }
+.shareDropDownMenuIcon { display: inline-block; font-size: 30px; margin-left: 12px; padding: 12px; }
+.shareDropDownMenuIcon:first-of-type { margin-left: 0px; }
+.postContainer { width: auto; margin-top: 0px; }
+.postContainer ~ .postContainer { margin-top: 20px; }
+.postLeft { display: table-cell; vertical-align: top; width: 220px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; text-align: center; background-color: #E9F5FD; padding: 20px; border-left: 4px solid #B3E2FF; border-top: 4px solid #B3E2FF; border-bottom: 1px solid #B3E2FF; }
+.postRight { display: table-cell; position: relative; width: auto; background-color: #FFF; border-top-right-radius: 5px; border-top: 4px solid #B3E2FF; border-right: 1px solid #B3E2FF; border-bottom: 1px solid #B3E2FF; border-bottom-right-radius: 5px; padding-bottom: 50px; }
+.postAuthor { width: auto; margin-bottom: 10px; font-size: 26px; font-weight: 500; color: #000 !important; }
+.postGroup { width: auto; margin-top: 10px; margin-bottom: 30px; font-size: 18px; }
+.postRightUpperBar { width: auto; border-top-right-radius: 3px; padding: 12px; background-color: #F5FBFF; margin-top: -1px; margin-right: -0.1px; }
+.postBody { width: auto; background-color: #FFF; padding: 20px; }
+.postRightBottomBar { width: 100%; box-sizing: border-box; position: absolute; bottom: 0; left: 0; padding: 12px; background-color: #E7F6FF; border-bottom-right-radius: 3px; z-index: 12; }
+.signatureBox { width: auto; margin-top: 40px; border-top: 1px dashed #C0C0C0; padding-top: 20px; }
+.postDataItem { margin-bottom: 6px; }
+.postAuthorData { font-size: 13px; margin-top: 20px; text-align: left; width: fit-content; margin-left: auto; margin-right: auto; }
+.postQuoteBox { width: auto; border-radius: 5px; border-left: 4px solid #C0C0C0; border-top: 4px solid #C0C0C0; border-right: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0; background-color: #F5F5F5; }
+.postQuoteBoxHeader { width: auto; padding: 12px; font-weight: 500; background-color: #EEEEEE; }
+.postQuoteBoxContent { width: auto; padding-left: 12px; padding-right: 12px; }
+.postQuoteBoxContent p { outline: 0px; border: 0px; }
+.postQuoteBoxContent p:hover { border: 1px solid #C0C0C0; box-shadow: 0px 0px 5px #000; }
+.postQuoteBoxContent p:focus { border: 1px solid #000; }
+.postQuoteBox:hover { border-left: 4px solid #808080; border-top: 4px solid #808080; border-right: 1px solid #808080; border-bottom: 1px solid #808080; }
+.postQuoteBox:hover .postQuoteBoxContent p .postCodeBoxContent code { border: 1px solid #C0C0C0; }
+.postCodeBoxContent { width: auto; padding-left: 12px; padding-right: 12px; font-family: 'Courier New', Courier, monospace; color: #000; }
+.postCodeBoxContent code { outline: 0px; border: 0px; }
+.postCodeBoxContent code:hover { border: 1px solid #C0C0C0; box-shadow: 0px 0px 5px #000; }
+.postCodeBoxContent code:focus { border: 1px solid #000; }
+.postCodeBox { width: auto; border-radius: 5px; border-left: 4px solid #E7E7E7; border-top: 4px solid #E7E7E7; border-right: 1px solid #E7E7E7; border-bottom: 1px solid #E7E7E7; background-color: #FAFAFA; }
+.postCodeBoxHeader { width: auto; padding: 12px; font-weight: 500; background-color: #E5E5E5; }
+.postCodeBoxContent { width: auto; padding-left: 12px; padding-right: 12px; }
+.postCodeBoxContent code { outline: 0px; background-color: #FAFAFA; }
+.postCodeBoxContent code:hover { border: 1px solid #C0C0C0; box-sizing: 0px 0px 5px #000; }
+.postCodeBoxContent code:focus { border: 1px solid #000; }
+.postCodeBox:hover { border-left: 4px solid #DBDBDB; border-top: 4px solid #DBDBDB; border-right: 1px solid #DBDBDB; border-bottom: 1px solid #DBDBDB; }
+.postCodeBox:hover .postCodeBoxContent code { border: 1px solid #C0C0C0; }
+code { display: block;}
+.alignRight { width: auto; text-align: right; }
+.marginTop { width: auto; margin-top: 30px; }

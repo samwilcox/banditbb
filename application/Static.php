@@ -19,5 +19,5 @@ define( 'COOKIE_DOMAIN', '' );
 define( 'CACHE', false );
 define( 'CACHE_METHOD', 'filecache' );
 define( 'CACHE_DIR', 'cache' );
-define( 'APP_URL', 'http://www.bbb.com' );
+define( 'APP_URL', 'http://bbb.com' );
 define( 'APP_WRAPPER', 'index' );

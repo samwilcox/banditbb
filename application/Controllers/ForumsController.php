@@ -30,4 +30,13 @@ class ForumsController extends \BanditBB\Controllers\BaseController {
         self::set( self::$model->generateIndex() );
         self::output( 'Forums', 'Index' );
     }
+
+    public function view() {
+        self::set( self::$model->viewForum() );
+        self::output( 'Forums', 'View' ); 
+    }
+
+    public function verifyPassword() {
+        self::$model->verifyForumPassword();
+    }
 }

@@ -1,0 +1,7 @@
+<label class="checkboxLabel">{LANG.global.followCheckboxTitle}<br><span class="checkboxDesc">{LANG.global.followCheckboxTip}</span><input type="checkbox" name="follow" id="followbox" value="1" data-follow="followbox" data-include="follow-includeinlist" onclick="toggleFollowBox(this);"{{followChecked}}><span class="checkmark"></span></label>
+<div id="follow-includeinlist"{{display}}>
+    <div class="followCheckbox">
+        <div class="followCheckboxLeft"></div>
+        <div class="followCheckboxRight"><label class="checkboxLabel">{LANG.global.followIncludeInListTitle}<br><span class="checkboxDesc">{LANG.global.followIncludeInListTip}</span><input type="checkbox" name="followinclude" value="1"{{followIncludeChecked}}><span class="checkmark"></span></label></div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+{{marginTop}}<a id="quickreply"></a>
+<span class="editorQuickReplyBox" id="quick-reply-link"><a href="javascript:void(0);" onclick="showQuickReply();"><i class="fa-solid fa-reply"></i> {LANG.editor.replyToThisTopic}</a></span>
+<div class="editorQuickReplyContainer" id="editor-container" style="display: none;">
+    <form name="quickreplyform" action="{{wrapper}}" method="post" enctype="multipart/form-data" onsubmit="return quickReplyFormCheck();">
+        {{editor}}<br>
+        {{uploader}}{{options}}<br><br>
+        {{hidden}}{{csrfToken}}<input type="submit" name="quickreplybutton" value="{LANG.editor.quickReplySubmitButton}">
+    </form>
+</div>

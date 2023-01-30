@@ -1,1 +1,98 @@
-{{body}}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="robots" content="noindex">
+    <title>{{communityTitle}}</title>
+    <link href="public/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="{{wrapper}}?controller=source&action=css&file=common" rel="stylesheet" type="text/css">
+    <link href="{{wrapper}}?controller=source&action=css&file=hyperlinks" rel="stylesheet" type="text/css">
+    <link href="{{wrapper}}?controller=source&action=css&file=forms" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="{{wrapper}}?controller=source&action=js&thirdparty=1&file=jquery-3.6.1.min"></script>
+    <script src="{{wrapper}}?controller=source&action=js&thirdparty=1&file=jquery-ui"></script>
+    <script src="{{wrapper}}?controller=source&action=js&file=common"></script>
+    <script src="{{wrapper}}?controller=source&action=js&file=hovercards"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>{{editorResources}}
+
+    <script type="application/json" id="json">
+        {
+            "baseUrl":"{{baseUrl}}",
+            "wrapper":"{{wrapper}}",
+            "eyeSlash":"fa-solid fa-eye-slash",
+            "eyeSlashNone":"fa-solid fa-eye",
+            "lang_validating":"{LANG.global.validating}"{{csrfTokenAjax}}
+        }
+    </script>
+</head>
+<body>
+    <div class="hovercard" id="hovercard"></div>
+    <div class="backgroundDisabler" id="background-disabler" onclick="closeDialog();"></div>{{subForumsMenus}}{{expandedMenuDropDownMenu}}{{signInDialog}}{{memberMenu}}{{notificationsMenu}}{{messagesMenu}}
+    <div class="dropDownMenu" id="dropdownmenu-language">
+        <span class="dropDownMenuLinks">{{localizationItems}}</span>
+    </div>
+    
+    <div class="dropDownMenu" id="dropdownmenu-theme">
+        <span class="dropDownMenuLinks">{{themeItems}}</span>
+    </div>
+    <header>
+        <div class="floater">
+            <div class="table">
+                <div class="tableRow">
+                    <div class="headerLeft">{{logo}}</div>
+                    <div class="headerCenter"><a href="{{forumsUrl}}"><i class="fa-regular fa-comment"></i> {LANG.global.forumsLink}</a>{{membersMenuLink}}{{calendarMenuLink}}{{searchMenuLink}}{{helpMenuLink}}</div>
+                    <div class="headerRight">{{userBar}}</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="breadcrumbsBar">
+        <div class="floater">
+            <div class="table">
+                <div class="tableRow">
+                    <div class="genericLeftCell"><i class="fa-solid fa-house-chimney"></i> <a href="{{homeUrl}}">{LANG.global.homeBreadcrumbLink}</a>{{breadcrumbs}}</div>
+                    <div class="genericRightCell">{{expandedMenuLink}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="floater">
+        {{blockBegin}}
+        {{blockLeftBegin}}
+        {{leftWidgets}}
+        {{blockLeftEnd}}
+        {{blockCenterBegin}}
+        {{topWidgets}}
+        {{topSeperator}}
+        {{body}}
+        {{bottomSeperator}}
+        {{bottomWidgets}}
+        {{blockCenterEnd}}
+        {{blockRightBegin}}
+        {{rightWidgets}}
+        {{blockRightEnd}}
+        {{blockEnd}}
+        <footer>
+            <div class="footerBar">
+                <div class="table">
+                    <div class="tableRow">
+                        <div class="footerLeft">{{selectedLocalization}}{{selectedTheme}}</div>
+                        <div class="footerCenter">{{allTimes}}</div>
+                        <div class="footerRight">{{privacyPolicy}}{{contactUs}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerUnder">
+                <div class="table">
+                    <div class="tableRow">
+                        <div class="genericLeftCell"><span class="debugInformation">{{debugInformation}}</span></div>
+                        <div class="genericRightCell">{{poweredBy}}</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

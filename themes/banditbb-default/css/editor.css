@@ -1,0 +1,34 @@
+.editorBox { width: auto; border-radius: 5px; border: 1px solid #C0C0C0; } 
+.editorToolBar { width: auto; border-top-left-radius: 5px; border-top-right-radius: 5px; background-color: #F5F5F5; padding: 12px; }
+.editorFull { width: auto; min-height: 400px; background-color: #FFF; padding: 20px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; height: 400px; overflow: auto; }
+.editorFull:focus { outline: 0px; }
+.editorToolBar a, .editorToolBar a:link, .editorToolBar a:active, .editorToolBar a:visited { color: #404040; text-decoration: none; border-radius: 5px; padding-left: 8px; padding-right: 8px; padding-top: 4px; padding-bottom: 4px; transition: 0.3s; cursor: default; }
+.editorToolBar a:hover { color: #404040; text-decoration: none; transition: 0.3s; background-color: #C0C0C0; }
+.editorToolBar span { border-left: 1px solid #808080; width: 1px; height: 20px; margin-left: 1px; margin-right: 4px; }
+.editorCodeEditor { width: 100%; box-sizing: border-box; border-radius: 5px; border: 1px solid #C0C0C0; background-color: #FFF; padding: 20px; min-height: 500px; height: 500px; font-family: 'Courier New', Courier, monospace; resize: none; }
+.editorColorChooser { width: 30px; height: 30px; border: 0px; background-color: #F5F5F5; border-radius: 5px; }
+.editorColorChooser:hover { border: 0px; }
+.editorColorChooser:focus { border: 0px; }
+.editorLite { width: 100%; box-sizing: border-box; min-height: 400px; height: 400px; padding: 20px; resize: none; border-radius: 0px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; border: 0px; outline: 0px; display: none; }
+.editorLite:focus { outline: 0px; } 
+.editorLite:hover { border: 0px; }
+.editorEmoticonSpacer img { margin-left: 4px; margin-bottom: 4px; }
+.editorEmoticonSpacer img:first { margin-left: 0px; margin-bottom: 4px; }
+.uploaderPreviewContainer { margin-top: 20px; display: inline-flex; flex-direction: row; flex-wrap: wrap; gap: 18px; column-gap: 18px; display: none; }
+.uploaderFileItem { flex-grow: 1; flex-basis: auto; border-radius: 5px; border: 1px solid #C0C0C0; background-color: #F5F5F5; padding: 12px; text-align: center; position: relative; }
+.uploaderFileItemClose { display: block; position: absolute; top: -7px; right: -7px; z-index: 10; font-size: 20px; font-weight: bold; }
+.uploaderFileItemAdd { display: block; position: absolute; bottom: 8px; right: 6px; z-index: 10; font-size: 20px; font-weight: bold; }
+.uploaderFileIcon { font-size: 170px; font-weight: bold; }
+.uploaderFileItemClose a, .uploaderFileItemClose a:link, .uploaderFileItemClose a:active, .uploaderFileItemClose a:visited { color: #000; text-decoration: none; transition: 0.3s; }
+.uploaderFileItemClose a:hover { color: #404040; text-decoration: none; transition: 0.3s; }
+.uploaderFileItemAdd a, .uploaderFileItemAdd a:link, .uploaderFileItemAdd a:active, .uploaderFileItemAdd a:visited { color: #000; text-decoration: none; transition: 0.3s; }
+.uploaderFileItemAdd a:hover { color: #404040; text-decoration: none; transition: 0.3s; }
+.uploaderBox { width: auto; border-radius: 5px; border: 1px dashed #808080; background-color: #FFF; padding: 12px; }
+.uploaderLeft { display: table-cell; vertical-align: top; white-space: nowrap; padding-right: 12px; font-size: 32px; }
+.uploaderRight { display: table-cell; vertical-align: top; position: relative; }
+.uploaderTitle { font-size: 16px; font-weight: bold; }
+.uploaderInput { display: none; }
+.dragging { border: 2px dashed #404040; }
+.editorQuickReplyBox a, .editorQuickReplyBox a:link, .editorQuickReplyBox a:active, .editorQuickReplyBox a:visited { color: #000; text-decoration: none; transition: 0.3s; display: block; border-radius: 5px; border: 1px solid #C0C0C0; background-color: #FFF; padding: 12px; font-size: 24px; font-weight: 300; }
+.editorQuickReplyBox a:hover { color: #000; text-decoration: none; transition: 0.3s; background-color: #F5F5F5; }
+.editorQuickReplyContainer { width: auto; border-radius: 5px; border: 1px solid #C0C0C0; background-color: #FFF; padding: 12px; }

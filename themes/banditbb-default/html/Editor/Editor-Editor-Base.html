@@ -1,0 +1,9 @@
+{{fontSelectorDropDown}}{{fontSizeSelectorDropDown}}{{insertLinkDropDown}}{{insertImageDropDown}}{{insertVideoDropDown}}{{insertCodeDialog}}{{insertEmoticonDropDown}}{{alignDropDown}}
+<div class="editorBox">
+    {{toolbar}}
+    <div class="editorFull" style="display: none;" contenteditable="true" id="editor-fullbox"></div>
+    <textarea class="editorLite" id="editor-litebox"></textarea>
+    <input type="hidden" name="editortype" id="editor-type-string" value="">
+    <input type="hidden" name="fulleditorsource" value="" id="editor-full-source">
+    <script>chooseCorrectEditor();</script>
+</div>

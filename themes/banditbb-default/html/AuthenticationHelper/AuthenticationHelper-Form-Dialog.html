@@ -1,0 +1,24 @@
+<div class="dialog" id="dialog-signinform" style="width: 700px;">
+    <form name="signin{{type}}form" action="{{wrapper}}" method="post" enctype="multipart/form-data"{{onSubmit}}>
+        <div class="dialogHeader">
+            <div class="table">
+                <div class="tableRow">
+                    <div class="genericLeftCell">{LANG.authenticationhelper.signInTitle}</div>
+                    <div class="genericRightCell"><a href="javascript:void(0);" class="tooltip tooltip--top" data-tooltip="{LANG.global.closeDialog}" onclick="closeDialog();"><i class="fa-solid fa-xmark"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="dialogContentWithBar">{{errorBox}}
+            <span class="relative"><i class="fa-solid fa-user identityFieldIcon"></i><input type="text" name="identity" placeholder="{{identityPlaceholder}}" id="identity-field-{{id}}" class="identityField"></span>
+            <span class="relative"><i class="fa-solid fa-key passwordFieldIcon"></i><input type="password" name="password" id="password-field-{{id}}" placeholder="{LANG.authenticationhelper.passwordPlaceholder}" class="passwordField"><span class="passwordToggleIcon"><a href="javascript:void(0);" data-field="password-field-{{id}}" data-icon="password-icon-box" onclick="togglePasswordField(this);"><i class="fa-solid fa-eye-slash" id="password-icon-box"></i></a></span></span><br><br>
+            <label class="checkboxLabel">{LANG.authenticationhelper.rememberMeTitle}<br><span class="checkboxDesc">{LANG.authenticationhelper.rememberMeInfo}</span><input type="checkbox" name="rememberme" value="1"><span class="checkmark"></span></label><br>
+            {{captcha}}{{options}}
+        </div>
+        <div class="dialogFooter">
+            <input type="hidden" name="controller" value="authentication">
+            <input type="hidden" name="action" value="authenticate">
+            <input type="hidden" name="url" value="{{url}}">{{captchaHidden}}{{csrfToken}}
+            <input type="submit" name="signin-dialog-submitbutton" value="{LANG.authenticationhelper.signInButton}" class="longField">
+        </div>
+    </form>
+</div>

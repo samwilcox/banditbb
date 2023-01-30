@@ -1,0 +1,6 @@
+<div class="dropDownMenu" id="dropdownmenu-gotopage">
+    <div class="dropDownMenuContent">
+        <input type="number" min="1" max="{{totalPages}}" placeholder="{{page}}" id="dropdownmenu-gotopage-field"> <input type="button" name="gotopagebutton" value="{LANG.paginationhelper.goToPageButton}" class="goToPageButton">
+    </div>
+</div>
+<span class="pagination"><ul>{{pagination}}<li class="paginationDisabled">{{displaying}}</li></ul></span><span class="pageOfPage"><a href="javascript:void(0);" id="dropdownmenu-gotopage-link" data-menu="dropdownmenu-gotopage" data-ignored="dropdownmenu-gotopage-icon,dropdownmenu-gotopage-field" data-link="dropdownmenu-gotopage-link" onclick="openDropDownMenu(this);">{{pageOfPage}} <i class="fas fa-angle-down" id="dropdownmenu-gotopage-icon"></i></a></span>

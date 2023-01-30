@@ -1,44 +1,74 @@
-.upperBarRightLinks a, .upperBarRightLinks a:link, .upperBarRightLinks a:active, .upperBarRightLinks a:visited { color: #FFF; text-decoration: none; transition: 0.3s; margin-left: 20px; }
-.upperBarRightLinks a:hover { color: #C0C0C0; text-decoration: none; transition: 0.3s; }
-.upperBarLeftLinks a, .upperBarLeftLinks a:link, .upperBarLeftLinks a:active, .upperBarLeftLinks a:visited { color: #FFF; text-decoration: none; }
-.upperBarLeftLinks a:hover { color: #FFF; text-decoration: underline; }
-.signInButton a, .signInButton a:link, .signInButton a:active, .signInButton a:visited { color: #FFF; text-decoration: none; font-weight: 300; padding-left: 18px; padding-right: 18px; padding-top: 6px; padding-bottom: 6px; border-radius: 5px; display: inline-block; transition: 0.3s; background-color: #4653BB; }
-.signInButton a:hover { color: #FFF; text-decoration: none; transition: 0.3s; background-color: #253389; }
-.createAccountButton a, .createAccountButton a:link, .createAccountButton a:active, .createAccountButton a:visited { color: #000; text-decoration: none; transition: 0.3s; padding-left: 18px; padding-right: 18px;padding-top: 6px; padding-bottom: 6px; display: inline-block; margin-left: 20px; border-radius: 5px; background-color: #979EB9; }
-.createAccountButton a:hover { color: #000; text-decoration: none; transition: 0.3s; background-color: #757FBF; }
-.menuBarLeft a, .menuBarLeft a:link, .menuBarLeft a:active, .menuBarLeft a:visited { color: #FFF; text-decoration: none; transition: 0.3s; display: inline-block; padding-left: 18px; padding-right: 18px; padding-top: 6px; padding-bottom: 6px; border-top-left-radius: 0px; }
-.menuBarLeft a:hover { color: #FFF; text-decoration: none; transition: 0.3s; background-color: #121D62; }
-.menuBarLeft a:first-of-type { border-top-left-radius: 3px; }
-.menuBarRight a, .menuBarRight a:link, .menuBarRight a:active, .menuBarRight a:visited { color: #FFF; text-decoration: none; transition: 0.3s; display: inline-block; padding-left: 18px; padding-right: 18px; padding-top: 6px; padding-bottom: 6px; border-top-right-radius: 0px; }
-.menuBarRight a:hover { color: #FFF; text-decoration: none; transition: 0.3s; background-color: #121D62; }
-.menuBarRight a:first-of-type { border-top-right-radius: 5px; }
-.menuBarLeftActive a,.menuBarLeftActive a:link, .menuBarLeftActive a:active, .menuBarLeftActive a:visited { color: #000; text-decoration: none; transition: 0.3s; display: inline-block; background-color: #FFF; padding-left: 18px; padding-right: 18px; padding-top: 6px; padding-bottom: 6px; border-top-left-radius: 0px; }
-.menuBarLeftActive a:first-of-type { border-top-left-radius: 5px; }
-.footerBar a, .footerBar a:link, .footerBar a:active, .footerBar a:visited { color: #FFF; text-decoration: none; }
-.footerBar a:hover { color: #FFF; text-decoration: underline; }
-.footerBarLeft a, .footerBarLeft a:link, .footerBarLeft a:active, .footerBarLeft a:visited { color: #FFF; text-decoration: none; margin-right: 20px; }
-.footerBarLeft a:hover { color: #FFF; text-decoration: underline; } 
-.categoryHeaderLeft a, .categoryHeaderLeft a:link, .categoryHeaderLeft a:active, .categoryHeaderLeft a:visited { color: #000; text-decoration: none; }
-.categoryHeaderLeft a:hover { color: #000; text-decoration: underline; }
-.categoryHeaderRight a, .categoryHeaderRight a:link, .categoryHeaderRight a:active, .categoryHeaderRight a:visited { color: #404040; text-decoration: none; transition: 0.3s; }
-.categoryHeaderRight a:hover { color: #000; text-decoration: none; transition: 0.3s; }
-.forumLink a, .forumLink a:link, .forumLink a:active, .forumLink a:visited { color: #4653BB; text-decoration: none; font-size: 19px; font-weight: 300; }
-.forumLink a:hover { color: #4653BB; text-decoration: underline; }
-.subForumsLink a, .subForumsLink a:link, .subForumsLink a:active, .subForumsLink a:visited { color: #000; text-decoration: none; transition: 0.3s; font-weight: 500; font-size: 13px; margin-top: 4px; display: inline-block; }
-.subForumsLink a:hover { color: #404040; text-decoration: none; transition: 0.3s; }
-a, a:link, a:active, a:visited { color: #4653BB; text-decoration: none; }
-a:hover { color: #4653BB; text-decoration: underline; }
-.blockBoxHeader a, .blockBoxHeader a:link, .blockBoxHeader a:active, .blockBoxHeader a:visited { color: #4653BB; text-decoration: none; transition: 0.3s; }
-.blockBoxHeader a:hover { color: #07114B; text-decoration: none; transition: 0.3s; }
-.dropDownMenuLinks a, .dropDownMenuLinks a:link, .dropDownMenuLinks a:active, a:visited { display: block; padding-top: 4px; padding-bottom: 4px; font-size: 14px; text-decoration: none; color: #000; padding-left: 8px; padding-right: 8px; }
-.dropDownMenuLinks a:hover { color: #000; text-decoration: none; transform: 0.3s; background-color: #E5E6ED; border-left: 4px solid #4653BB; border-right: 4px solid #4653BB; padding-left: 4px; padding-right: 4px; }
+.headerCenter a, .headerCenter a:link, .headerCenter a:active, .headerCenter a:visited { color: #000; text-decoration: none; transition: 0.3s; padding-left: 18px; padding-right: 18px; padding-top: 16px; padding-bottom: 15px; font-size: 20px; font-weight: 500; }
+.headerCenter a:hover { color: #FFF; text-decoration: none; transition: 0.3s; background-color: #007FD0; }
+.guestLinks a, .guestLinks a:link, .guestLinks a:active, .guestLinks a:visited { color: #000; text-decoration: none; transition: 0.3s; font-size: 18px; font-weight: 300; margin-left: 30px; padding-top: 18px; padding-bottom: 18px; }
+.guestLinks a:hover { color: #007FD0; text-decoration: none; transition: 0.3s; }
+.guestLinks a:first-of-type { margin-left: 0px; }
+.breadcrumbsBar a, .breadcrumbsBar a:link, .breadcrumbsBar a:active, .breadcrumbsBar a:visited { color: #404040; text-decoration: none; transition: 0.3s; }
+.breadcrumbsBar a:hover { color: #000; text-decoration: none; transition: 0.3s; } 
+.blockHeader a, .blockHeader a:link, .blockHeader a:active, .blockHeader a:visited { color: #007FD0; text-decoration: none; }
+.blockHeader a:hover { color: #007FD0; text-decoration: underline; }
+.blockHeaderToggle a, .blockHeaderToggle a:link, .blockHeaderToggle a:active, .blockHeaderToggle a:visited { color: #404040; text-decoration: none; transition: 0.3s; }
+.blockHeaderToggle a:hover { color: #000; text-decoration: none; transition: 0.3s; }
+a, a:link, a:active, a:visited { color: #007FD0; text-decoration: none; transition: 0.3s; }
+a:hover { color: #000; text-decoration: none; transition: 0.3s; }
+.footerRight a, .footerRight a:link, .footerRight a:active, .footerRight a:visited { color: #000; text-decoration: none; margin-left: 20px; }
+.footerRight a:hover { color: #000; text-decoration: underline; }
+.footerLeft a, .footerLeft a:link, .footerLeft a:active, .footerLeft a:visited { color: #000; text-decoration: none; transition: 0.3s; margin-right: 20px; }
+.footerLeft a:hover { color: #007FD0; text-decoration: none; transition: 0.3s; }
+.dropDownMenuLinks a, .dropDownMenuLinks a:link, .dropDownMenuLinks a:active, .dropDownMenuLinks a:visited { display: block; font-size: 14px; color: #000; text-decoration: none; transition: 0.3s; padding-left: 12px; padding-right: 12px; padding-top: 6px; padding-bottom: 6px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-radius: 0px; }
+.dropDownMenuLinks a:hover { color: #000; text-decoration: none; transition: 0.3s; border-left: 4px solid #007FD0; font-style: normal; border-right: 4px solid #007FD0; background-color: #F1F1F1; }
 .dropDownMenuLinks a:first-of-type { border-top-left-radius: 5px; border-top-right-radius: 5px; }
 .dropDownMenuLinks a:nth-last-of-type(1) { border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+.dropDownMenuLinksHorizontal a, .dropDownMenuLinksHorizontal a:link, .dropDownMenuLinksHorizontal a:active, .dropDownMenuLinksHorizontal a:visited { display: inline-block; font-size: 14px; color: #000; text-decoration: none; transition: 0.3s; padding-left: 12px; padding-right: 12px; padding-top: 6px; padding-bottom: 6px; border-left: 4px solid transparent; border-right: 4px solid transparent; border-radius: 0px; }
+.dropDownMenuLinksHorizontal a:hover { color: #000; text-decoration: none; transition: 0.3s; border-left: 4px solid #007FD0; font-style: normal; border-right: 4px solid #007FD0; background-color: #F1F1F1; }
+.dropDownMenuLinksHorizontal a:first-of-type { border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+.dropDownMenuLinksHorizontal a:nth-last-of-type(1) { border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
+.subForumsLink a, .subForumsLink a:link, .subForumsLink a:active, .subForumsLink a:visited { color: #000; text-decoration: none; font-style: normal; transition: 0.3s; display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 500; }
+.subForumsLink a:hover { color: #404040; text-decoration: none; transition: 0.3s; }
+.categoryHeader a, .categoryHeader a:link, .categoryHeader a:active, .categoryHeader a:visited { color: #000; text-decoration: none; transition: 0.3s; }
+.categoryHeader a:hover { color: #007FD0; text-decoration: none; transition: 0.3s; }
 .dialogHeader a, .dialogHeader a:link, .dialogHeader a:active, .dialogHeader a:visited { color: #FFF; text-decoration: none; transition: 0.3s; }
-.dialogHeader a:hover { color: #C0C0C0; text-decoration: none; transition: 0.3s; }
-.passwordToggleIcon a, .passwordToggleIcon a:link, .passwordToggleIcon a:active, .passwordToggleIcon a:visited { color: #000; text-decoration: none; transition: 0.3s; }
-.passwordToggleIcon a:hover { color: #4653BB; text-decoration: none; transition: 0.3s; }
-.hovercardTitle a, .hovercardTitle a:link, .hovercardTitle a:active, .hovercardTitle a:visited { color: #000; text-decoration: none; font-size: 22px; font-weight: 400; }
-.hovercardTitle a:hover { color: #000; text-decoration: underline; }
-.hovercardGroupTitle a,.hovercardGroupTitle a:link, .hovercardGroupTitle a:active, .hovercardGroupTitle a:visited { color: #000; text-decoration: none; font-size: 18px; font-weight: 300; }
-.hovercardGroupTitle a:hover { color: #000; text-decoration: underline; }
+.dialogHeader a:hover { color: #808080; text-decoration: none; transition: 0.3s; }
+.passwordToggleIcon a, .passwordToggleIcon a:link, .passwordToggleIcon a:active, .passwordToggleIcon a:visited { color: #808080; text-decoration: none; transition: 0.3s; }
+.passwordToggleIcon a:hover { color: #000; text-decoration: none; transition: 0.3s; }
+.errorBoxCloseIcon a, .errorBoxCloseIcon a:link, .errorBoxCloseIcon a:active, .errorBoxCloseIcon a:visited { color: #000; text-decoration: none; transition: 0.3s; }
+.errorBoxCloseIcon a:hover { color: #808080; text-decoration: none; transition: 0.3s; }
+.hovercardUserLink a, .hovercardUserLink a:link, .hovercardUserLink a:active, .hovercardUserLink a:visited { color: #000; text-decoration: none; font-size: 22px; font-weight: 500; }
+.hovercardUserLink a:hover { color: #000; text-decoration: underline; }
+.hovercardGroupLink a, .hovercardGroupLink a:link, .hovercardGroupLink a:active, .hovercardGroupLink a:visited { color: #000; text-decoration: none; font-size: 18px; font-weight: 300; }
+.hovercardGroupLink a:hover { color: #000; text-decoration: underline; }
+.hovercardFooter a, .hovercardFooter a:link, .hovercardFooter a:active, .hovercardFooter a:visited { color: #000; font-size: 13px; text-decoration: none; transition: 0.3s; margin-left: 8px; border-radius: 5px; display: inline-block; padding-left: 18px; padding-right: 18px; padding-top: 6px; padding-bottom: 6px; background-color: #E0E0E0; }
+.hovercardFooter a:hover { color: #000; text-decoration: none; transition: 0.3s; background-color: #C0C0C0; }
+.hovercardFooter a:first-of-type { margin-left: 0px; }
+.memberUserBarName a, .memberUserBarName a:link, .memberUserBarName a:active, .memberUserBarName a:visited { color: #000; text-decoration: none; font-size: 18px; transition: 0.3s; }
+.memberUserBarName a:hover { color: #007FD0; text-decoration: none; } 
+.memberUserBarIcons a, .memberUserBarIcons a:link, .memberUserBarIcons a:active, .memberUserBarIcons a:visited { color: #000; text-decoration: none; transition: 0.3s; border-radius: 5px; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; font-size: 18px; }
+.memberUserBarIcons a:hover { color: #FFF; text-decoration: none; transition: 0.3s; background-color: #007FD0; }
+.dropDownMenuFooter a, .dropDownMenuFooter a:link,.dropDownMenuFooter a:active, .dropDownMenuFooter a:visited { color: #000; text-decoration: none; margin-left: 12px; transition: 0.3s; border-radius: 5px; padding-left: 12px; padding-right: 12px; padding-top: 4px; padding-bottom: 4px; background-color: #DDDDDD; display: inline-block; }
+.dropDownMenuFooter a:hover { color: #FFF; text-decoration: none; transition: 0.3s; background-color: #808080; }
+.dropDownMenuFooter a:first-of-type { margin-left: 0px; }
+.pageOfPage a, .pageOfPage a:link, .pageOfPage a:active, .pageOfPage a:visited { color: #000; text-decoration: none; transition: 0.3s; display: inline-block; padding-left: 9px; padding-right: 9px; padding-top: 5px; padding-bottom: 4px; background-color: #FFF; border: 1px solid #C0C0C0; border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
+.pageOfPage a:hover { color: #FFF !important; text-decoration: none; background-color: #007FD0; }
+.pagination li a, .pagination li a:link, .pagination li a:active, .pagination li a:visited { display: inline-block; padding-left: 9px; padding-right: 9px; padding-bottom: 4px; padding-top: 5px; color: #000; text-decoration: none; transition: 0.3s; border-right: 1px solid #C0C0C0; background-color: #FFF; }
+.pagination li a:hover { color: #000; text-decoration: none; transition: 0.3s; background-color: #ECECEC; }
+.button a, .button a:link, .button a:active, .button a:visited { color: #FFF; text-decoration: none; transition: 0.3s; border-radius: 5px; background-color: #007FD0; padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; display: inline-block; margin-left: 20px; }
+.button a:hover { color: #FFF; text-decoration: none; transition: 0.3s; background-color: rgb(0, 50, 82); }
+.button a:first { margin-left: 0px;}
+.forumFilterLink a, .forumFilterLink a:link, .forumFilterLink a:active, .forumFilterLink a:visited { color: #000; text-decoration: none; transition: 0.3s; font-size: 13px; border-radius: 5px; display: inline-block; background-color: #DDDDDD; padding-left: 12px; padding-right: 12px; padding-top: 5px; padding-bottom: 5px;  }
+.forumFilterLink a:hover { color: #000; text-decoration: none; transition: 0.3s; background-color: #FFF; } 
+.topicsListItemOptions a, .topicsListItemOptions a:link, .topicsListItemOptions a:active, .topicsListItemOptions a:visited { color: #000; text-decoration: none; transition: 0.3s; }
+.topicsListItemOptions a:hover { color: #007FD0; text-decoration: none; transition: 0.3s; }
+.markAllTopicsRead a, .markAllTopicsRead a:link, .markAllTopicsRead a:active, .markAllTopicsRead a:visited { color: #FFF; text-decoration: none; transition: 0.3s; border-radius: 5px; margin-right: 20px; border: 1px solid #FFF; display: inline-block; padding-left: 12px; padding-right: 12px; padding-top: 4px; padding-bottom: 4px; font-size: 13px; }
+.markAllTopicsRead a:hover { color: #C0C0C0; text-decoration: none; transition: 0.3s; border: 1px solid #C0C0C0; }
+.followersBubbleLeft a, .followersBubbleLeft a:link, .followersBubbleLeft a:active, .followersBubbleLeft a:visited { color: #000; text-decoration: none; transition: 0.3s; font-size: 11px; border-radius: 5px; padding-left: 4px; padding-right: 4px; padding-top: 2px; padding-bottom: 2px; background-color: #FFF; font-weight: 500; }
+.followersBubbleLeft a:hover { color: #000; text-decoration: none; transition: 0.3s; background-color: #E6E4E4; }
+.followersBubbleRight a, .followersBubbleRight a:link, .followersBubbleRight a:active, .followersBubbleRight a:visited { color: #FFF; text-decoration: none; transition: 0.3s; padding-left: 12px; padding-right: 12px; padding-top: 6px; padding-bottom: 6px; }
+.followersBubbleRight a:hover { color: #FFF; text-decoration: none; transition: 0.3s; }
+.rssFeedLink a, .rssFeedLink a:link, .rssFeedLink a:active, .rssFeedLink a:visited { color: #FFA500; text-decoration: none; transition: 0.3s; margin-left: 12px; font-size: 18px; }
+.rssFeedLink a:hover { color: #FF8C00; text-decoration: none; transition: 0.3s;  }
+.shareButton a, .shareButton a:link, .shareButton a:active, .shareButton a:visited { color: #000; text-decoration: none; transition: 0.3s; border-radius: 5px; padding-left: 12px; padding-right: 12px; padding-top: 4px; padding-bottom: 4px; background-color: #FFF; border: 1px solid #C0C0C0; }
+.shareButton a:hover { color: #404040; text-decoration: none; transition: 0.3s; border: 1px dashed #000; }
+.postAuthor a, .postAuthor a:link, .postAuthor a:active, .postAuthor a:visited { color: #000 !important; text-decoration: none; }
+.postAuthor a:hover { color: #000 !important; text-decoration: underline; }
+.postRightBottomBarLeft a, .postRightBottomBarLeft a:link, .postRightBottomBarLeft a:active, .postRightBottomBarLeft a:visited { color: #000; text-decoration: none; transition: 0.3s; border-radius: 5px; padding-left: 8px; padding-right: 8px; padding-top: 2px; padding-bottom: 2px; margin-right: 12px; }
+.postRightBottomBarLeft a:hover { color: #000; text-decoration: none; transition: 0.3s; background-color: #95D6FF; }

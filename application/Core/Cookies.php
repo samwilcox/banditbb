@@ -32,7 +32,7 @@ class Cookies {
     }
 
     public static function deleteCookie( $name, $phpCookie = false ) {
-        \unset( $_COOKIE[$name] );
-        \setcookie( $name, ''. \time() - 3600, $phpCookie ? '' : COOKIE_PATH, $phpCookie ? '' : COOKIE_DOMAIN );
+        unset( $_COOKIE[$name] );
+        \setcookie( $name, '', \time() - 3600, $phpCookie ? '' : COOKIE_PATH, $phpCookie ? '' : COOKIE_DOMAIN );
     }
 }

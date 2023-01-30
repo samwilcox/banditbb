@@ -137,7 +137,7 @@ class Output extends \BanditBB\Application {
 
         if ( \count( $globals ) > 0 ) $vars = \array_merge( $vars, $globals );
 
-        //$vars = \array_merge( $vars, self::barHelper()->getVars( \strtolower( $controller ), \strtolower( $action ) ) );
+        $vars = \array_merge( $vars, self::widgetsHelper()->getWidgetOutputVars( \strtolower( $controller ), \strtolower( $action ) ) );
 
         self::pageOutput( $base, $vars );
     }
@@ -150,7 +150,7 @@ class Output extends \BanditBB\Application {
 
         if ( \count( $globals ) > 0 ) $vars = \array_merge( $vars, $globals );
 
-        //$vars = \array_merge( $vars, self::barHelper()->getVars( \strtolower( $controller ), \strtolower( $action ) ) );
+        $vars = \array_merge( $vars, self::widgetsHelper()->getWidgetOutputVars( \strtolower( $controller ), \strtolower( $action ) ) );
 
         self::pageOutput( $base, $vars );
     }
@@ -163,7 +163,7 @@ class Output extends \BanditBB\Application {
 
         if ( \count( $globals ) > 0 ) $vars = \array_merge( $vars, $globals );
 
-        //$vars = \array_merge( $vars, self::barHelper()->getVars( \strtolower( $controller ), \strtolower( $action ) ) );
+        $vars = \array_merge( $vars, self::widgetsHelper()->getWidgetOutputVars( \strtolower( $controller ), \strtolower( $action ) ) );
 
         self::pageOutput( $base, $vars );
     }
@@ -174,7 +174,7 @@ class Output extends \BanditBB\Application {
 
         if ( \count( $globals ) > 0 ) $vars = \array_merge( $vars, $globals );
 
-        //$vars = \array_merge( $vars, self::barHelper()->getVars( \strtolower( $controller ), \strtolower( $action ) ) );
+        $vars = \array_merge( $vars, self::widgetsHelper()->getWidgetOutputVars( \strtolower( $controller ), \strtolower( $action ) ) );
 
         self::pageOutput( $base, $vars );
     } 

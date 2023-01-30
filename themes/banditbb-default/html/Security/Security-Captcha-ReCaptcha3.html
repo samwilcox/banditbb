@@ -1,0 +1,11 @@
+<script src="https://www.google.com/recaptcha/api.js?render={{siteKey}}"></script>
+<script>
+    function recaptchaOnClick() {
+        event.preventDefault();
+        grecaptcha.ready( function() {
+            grecaptcha.execute( '{{siteKey}}', { action: 'submit' } ).then( function( token ) {
+                $( "#recaptcha-hidden-{{hash}}" ).val( token );
+            });
+        });
+    }
+</script>

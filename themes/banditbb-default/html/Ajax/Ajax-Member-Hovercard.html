@@ -1,0 +1,22 @@
+    <div id="hc-header-{{id}}" class="hovercardHeader"{{coverStyle}}><span id="hc-floater-{{id}}" class="hovercardPhotoFloater">{{photo}}</span></div>
+    <div class="hovercardContentUpper" id="hc-upper-{{id}}">
+        <span class="hovercardUserLink" id="hc-userlink-{{id}}"><a href="{{url}}" class="tooltip tooltip--right" data-tooltip="{{tooltip}}" id="hc-namelink-{{id}}">{{displayName}}</a></span>{{onlineStatus}}<br>
+        <span class="hovercardGroupLink" id="hc-grouplink-{{id}}">{{groupLink}}</span>
+    </div>
+    <div class="hovercardContentLower" id="hc-lower-{{id}}">
+        <div class="table" id="hc-table-{{id}}">
+            <div class="tableRow" id="hc-tablerow-{{id}}">
+                <div class="genericLeftCell mediumText" id="hc-joined-{{id}}">{{joined}}</div>
+                <div class="genericRightCell mediumText" id="hc-lastonline-{{id}}">{{lastOnline}}</div>
+            </div>
+        </div>
+        <div class="hovercardStats" id="hc-stats-{{id}}">
+            <div class="tableNoWidth" id="hc-tablenw-{{id}}">
+                <div class="tableRow" id="hc-tablerownw-{{id}}">{{posts}}{{reputation}}{{gender}}{{location}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="hovercardFooter" id="hc-footer-{{id}}">
+        <a href="{{contentUrl}}" id="hc-findcontent-{{id}}"><i class="fa-solid fa-magnifying-glass" id="hc-findcontenticon-{{id}}"></i> {LANG.ajax.findContentLink}</a>{{messageLink}}
+        {{blockLink}}{{friendsLink}}
+    </div>

@@ -2,6 +2,7 @@ var json;
 var currentDropDown = null;
 var triggeredElementList = null;
 var currentDialogElement = null;
+var selRange;
 
 $( document ).ready( function() {
     $( this ).click( function( e ) {
@@ -22,6 +23,7 @@ $( document ).ready( function() {
     });
 
     parseJson();
+    hljs.highlightAll();
 });
 
 function parseJson() {
@@ -54,6 +56,7 @@ function openDropDownMenu( e ) {
     ignoredElements.push( $( e ).data( 'link' ) );
     currentDropDown = $( e ).data( 'menu' );
     triggeredElementList = ignoredElements;
+    selRange = saveSelection();
 }
 
 function toggle( e ) {
@@ -115,11 +118,12 @@ function openDialog( e ) {
     }
 
     if ( modifyMargin != true ) {
-        dialog.css( { "width" : dialogWidth + "px", "margin-top" : "-" + ( dialog.height() / 2 ) + "px", "margin-left" : "-" + ( dialog.width() / 2 ) + "px" } );
+        dialog.css( { "width" : dialogWidth + "px", "margin-left" : "-" + ( dialog.width() / 2 ) + "px" } );
     }
 
     toggleBackgroundDisabler( true );
-    dialog.fadeIn();
+    dialog.fadeIn( { queue: false, duration: 'slow' } );
+    dialog.animate( { 'marginTop' : '+=30px' }, 400, 'easeInQuad' );
     currentDialogElement = dialog.attr( 'id' );
 }
 
@@ -147,8 +151,137 @@ function openDialogAlt( dialog, width ) {
 
 function closeDialog() {
     if ( currentDialogElement != null ) {
-        $( "#" + currentDialogElement ).fadeOut();
+        $( "#" + currentDialogElement ).fadeOut( { queue: false, duration: 'slow' } );
+        $( "#" + currentDialogElement ).animate( { 'marginTop' : '-=30px' }, 400, 'easeOutQuad' );
         toggleBackgroundDisabler( false );
         currentDialogElement = null;
     }
+}
+
+function validateCredentials( e ) {
+    event.preventDefault();
+
+    var submitButton = $( "#" + $( e ).data( 'button' ) );
+    var errorBox = $( "#" + $( e ).data( 'errorbox' ) );
+    var errorBoxContent = $( "#" + $( e ).data( 'errorboxcontent' ) );
+    var identity = $( "#" + $( e ).data( 'identity' ) );
+    var password = $( "#" + $( e ).data( 'password' ) );
+    var form = $( e ).data( 'form' );
+    var originalButtonText = submitButton.val();
+    var valid = false;
+    var completed = false;
+
+    submitButton.val( json.lang_validating );
+    submitButton.attr( "disabled", true );
+
+    $.ajax({
+        url: json.wrapper,
+        type: 'get',
+        data: {
+            'controller':'ajax',
+            'action':'validatecredentials',
+            'identity':identity.val(),
+            'password':password.val()
+        },
+        dataType: 'json',
+        success: function( response ) {
+            if ( response.status ) {
+                errorBoxContent.html();
+                errorBox.fadeOut();
+                submitButton.val( originalButtonText );
+                submitButton.removeAttr( 'disabled' );
+                valid = true;
+                completed = true;
+            } else {
+                errorBoxContent.html( response.data );
+                errorBox.fadeIn();
+                submitButton.val( originalButtonText );
+                submitButton.removeAttr( 'disabled' );
+                valid = false;
+                completed = true;
+            }
+        }
+    });
+
+    ( async() => {
+        while ( completed == false ) {
+            await new Promise( resolve => setTimeout( resolve, 1000 ) );
+        }
+
+        if ( valid == true ) {
+            document.getElementsByName( form )[0].submit();
+        }
+    })();
+}
+
+function validateForumPassword( e ) {
+    event.preventDefault();
+
+    var submitButton = $( "#" + $( e ).data( 'button' ) );
+    var errorBox = $( "#" + $( e ).data( 'errorbox' ) );
+    var errorBoxContent = $( "#" + $( e ).data( 'errorboxcontent' ) );
+    var forumId = $( e ).data( 'forumid' );
+    var password = $( "#" + $( e ).data( 'password' ) );
+    var form = $( e ).data( 'form' );
+    var originalButtonText = submitButton.val();
+    var valid = false;
+    var completed = false;
+
+    submitButton.val( json.lang_validating );
+    submitButton.attr( "disabled", true );
+
+    $.ajax({
+        url: json.wrapper,
+        type: 'get',
+        data: {
+            'controller':'ajax',
+            'action':'validateforumpassword',
+            'password':password.val(),
+            'forumid':forumId
+        },
+        dataType: 'json',
+        success: function( response ) {
+            if ( response.status ) {
+                errorBoxContent.html();
+                errorBox.fadeOut();
+                submitButton.val( originalButtonText );
+                submitButton.removeAttr( "disabled" );
+                valid = true;
+                completed = true;
+            } else {
+                errorBoxContent.html( response.data );
+                errorBox.fadeIn();
+                submitButton.val( originalButtonText );
+                submitButton.removeAttr( "disabled" );
+                valid = false;
+                completed = true;
+            }
+        }
+    });
+
+    ( async() => {
+        while ( completed == false ) {
+            await new Promise( resolve => setTimeout( resolve, 1000 ) );
+        }
+
+        if ( valid == true ) {
+            document.getElementsByName( form )[0].submit();
+        }
+    })();
+}
+
+function closeErrorBox( e ) {
+    $( "#" + $( e ).data( 'errorbox' ) ) .fadeOut();
+}
+
+function refreshCaptcha( e ) {
+    var catchaImage = $( "#" + $( e ).data( 'image' ) );
+    var captchaTextBox = $( "#" + $( e ).data( 'field' ) );
+    catchaImage.attr( "src", json.wrapper + "?controller=ajax&action=captcha&date=" + Date.now() );
+    captchaTextBox.val( '' );
+}
+
+function onDivClick( e ) {
+    var address = $( e ).data( 'url' );
+    location.href = address;
 }

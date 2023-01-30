@@ -21,13 +21,13 @@ if ( ! defined( 'APP_STARTED' ) ) {
 class Features extends \BanditBB\Types\Types {
 
     const MEMBERS = 'members';
-    const WHOS_ONLINE = 'whosOnline';
     const CALENDAR = 'calendar';
     const SEARCH = 'search';
     const HELP = 'help';
     const EXPANDED_MENU = 'expandedMenu';
-    const NEWEST_CONTENT = 'newestContent';
+    const LATEST_CONTENT = 'latestContent';
     const COMMUNITY_LEADERS = 'communityLeaders';
+    const WHOS_ONLINE = 'whosOnline';
     const DELETE_COOKIES = 'deleteCookies';
     const MARK_ALL_READ = 'markAllRead';
     const DEBUG_INFORMATION = 'debugInformation';
@@ -63,4 +63,5 @@ class Features extends \BanditBB\Types\Types {
     const TEXT_EDITOR_INSERT_GIF = 'textEditorInsertGif';
     const TOPIC_RSS_FEED = 'topicRssFeed';
     const REPUTATION = 'reputation';
+    const FRIENDS = 'friends';
 }

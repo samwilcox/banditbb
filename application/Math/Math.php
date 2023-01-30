@@ -53,7 +53,7 @@ class Math extends \BanditBB\Application {
         return $number;
     }
 
-    public static function calculateDebugPercentage( $executionTimer, $databaseTimer ) {
+    public static function calculateDebugPercentages( $executionTimer, $databaseTimer ) {
         $retVal = new \stdClass();
 
         $total = $executionTimer;
